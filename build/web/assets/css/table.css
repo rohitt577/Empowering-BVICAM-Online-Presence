@@ -1,0 +1,70 @@
+body{
+  background-color: aliceblue;
+    }
+    
+    .styled-table {
+    border-collapse: collapse;
+    margin: 55px 500px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #272a47;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #b6bae1;
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #272a47;
+}
+styled-table {
+  width: 100%; /* Maintain full-width for responsiveness */
+  border-collapse: collapse; /* Ensure borders collapse for a neat look */
+  margin: 20px auto; /* Add some margin for better spacing */
+  border: 2px solid #070db0; /* Add a visible border to the entire table */
+  box-shadow: 0px 2px 5px rgba(169, 105, 105, 0.1); /* Subtle box-shadow for depth */
+  font-family: sans-serif; /* Use a modern font for better readability */
+  transition: transform 0.2s ease-out; /* Add a transition for the hover effect */
+}
+
+th, td {
+  padding: 15px; /* Increase padding for better spacing and content */
+  border: 1px solid #ddd; /* Lighter border within cells */
+  background-color: #fff; /* White background for clear text */
+  text-align: left; /* Maintain left alignment */
+  transition: background-color 0.2s ease-out; /* Add a transition for the hover effect */
+}
+
+th {
+  font-weight: bold; /* Keep bold text for headers */
+  color: #100963; /* Darker color for contrast */
+  background-color: rgb(193, 216, 236);
+  border-bottom: 2px solid #ddd; /* Thicker bottom border for headers */
+}
+
+tr:nth-child(even) { /* Alternate row background color for striping */
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  transform: translateY(-5px); /* Float the row up slightly on hover */
+  background-color: #bc3d3d; /* Change background color slightly on hover */
+  cursor: pointer; /* Indicate hoverability */
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}

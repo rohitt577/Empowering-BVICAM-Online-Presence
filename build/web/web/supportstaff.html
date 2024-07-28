@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BVICAM | Where we turn you into a force</title>
+  <!-- Assuming you're using Bootstrap for table styling -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body{
+      background-color: aliceblue;
+    }
+    .wrapper {
+      margin-top: 5vh;
+    }
+
+    .dataTables_filter {
+      float: right;
+    }
+
+    .table-hover > tbody > tr:hover {
+      background-color: lighten(cyan, 40%);
+    }
+
+    .table {
+      @media only screen and (min-width: 768px) {
+        table-layout: fixed;
+        max-width: 100% !important;
+      }
+    }
+
+    thead {
+      background: #5ba9ed;
+    }
+
+    .table td:nth-child(2) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .highlight {
+      background: lighten(yellow,30%);
+    }
+
+    @media only screen and (max-width: 767px) {
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead tr,
+      tfoot tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50% !important;
+      }
+
+      td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+
+      .table td:nth-child(1) {
+        background: #ccc;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+      }
+
+      td:nth-of-type(1):before {
+        content: "Image";
+      }
+      td:nth-of-type(2):before {
+        content: "Name";
+      }
+      td:nth-of-type(3):before {
+        content: "Designation";
+      }
+      td:nth-of-type(4):before {
+        content: "Age";
+      }
+      td:nth-of-type(5):before {
+        content: "Start date";
+      }
+      td:nth-of-type(6):before {
+        content: "Support Staff Seniority";
+      }
+
+      .dataTables_length {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="small">    
+
+    <div include-html="/header.html" id="header"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function() {
+    $('#header').load('/header.html');
+  });
+</script>
+</div>
+
+  <div class="container wrapper">
+    <table class="table table-bordered table-hover" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th class="col-md-2">Image</th>
+          <th class="col-md-2">Name</th>
+          <th class="col-md-2">Designation</th>
+          <th class="col-md-2">Start date</th>
+          <th class="col-md-2">Time</th>
+          <th class="col-md-2">Support Staff Seniority</th>
+        </tr>
+      </thead>
+     
+      <tbody>
+        <tr>
+          <td><img src="assets/images/campus-information/m. k. chaudhary.png"></td>
+         
+          <td>Mr. M.K. Choudhary</td>
+          <td>Librarian</td>
+          <td>19th October , 2013</td>
+          <td>5:37</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+        <td><img src="assets/images/campus-information/hanip mulani.png"></td>
+         
+        <td>Mr. Hanip Mulani</td>
+        <td>Administrative & Accounts Officer</td>
+        <td>19th October , 2013</td>
+        <td>5:19</td>
+        <td>2</td>
+      </tr>
+       
+      <tr>
+      <td><img src="assets/images/campus-information/shashikant yadav.png"></td>
+         
+          <td>Mr. Shashikant Yadav</td>
+          <td>	Office Executive</td>
+          <td>19th October , 2013</td>
+          <td>5:33</td>
+          <td>3</td>
+        </tr>
+
+
+        <tr>
+        <td><img src="assets/images/campus-information/subhash mahadik.png"></td>
+         
+          <td>Mr. Subhash Mahadik</td>
+          <td>Office Executive</td>
+          <td>19th October , 2013</td>
+          <td>5:34</td>
+          <td>4</td>
+        </tr>
+
+        <tr>
+        <td><img src="assets/images/campus-information/raghunath patil.png"></td>
+         
+          <td>Mr. Raghunath Patil</td>
+          <td>Laboratory Incharge</td>
+          <td>19th October , 2013</td>
+          <td>5:35</td>
+          <td>5</td>
+        </tr>
+
+        <tr>
+          <td><img src="assets/images/campus-information/subhash chand.png"></td>
+           
+            <td>Mr. Subhash Chand</td>
+            <td>	Computer Programmer</td>
+            <td>19th October , 2013</td>
+            <td>5:36</td>
+            <td>6</td>
+          </tr>
+
+          <tr>
+            <td><img src="assets/images/campus-information/sabir hussain.png"></td>
+             
+              <td>Mr Sabir Hussain</td>
+              <td>	Library Executive</td>
+              <td>19th October , 2013</td>
+              <td>5:38</td>
+              <td>7</td>
+            </tr>
+
+            <tr>
+              <td><img src="assets/images/campus-information/saiqa khatoon.png"></td>
+               
+                <td>Ms. Saiqa Khatoon</td>
+                <td>	Front Office Executive</td>
+                <td>19th October , 2013</td>
+                <td>5:40</td>
+                <td>8</td>
+              </tr>
+
+              <tr>
+                <td><img src="assets/images/campus-information/sambhaji karande.png"></td>
+                 
+                  <td>Mr. Sambhaji Karande</td>
+                  <td>Driver</td>
+                  <td>19th October , 2013</td>
+                  <td>5:52</td>
+                  <td>9</td>
+                </tr>
+
+                <tr>
+                  <td><img src="assets/images/campus-information/rakesh yadav.png"></td>
+                   
+                    <td>Mr. Rakesh Yadav</td>
+                    <td>Ministerial Staff</td>
+                    <td>19th October , 2013</td>
+                    <td>5:50</td>
+                    <td>10</td>
+                  </tr>
+
+                  <tr>
+                    <td><img src="assets/images/campus-information/subhash bodre.png"></td>
+                     
+                      <td>Mr. Subhash Bodre</td>
+                      <td>Ministerial Staff</td>
+                      <td>19th October , 2013</td>
+                      <td>5:46</td>
+                      <td>11</td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="assets/images/campus-information/deepak singh.png"></td>
+                       
+                        <td>Mr. Deepak Singh</td>
+                        <td>Ministerial Staff</td>
+                        <td>19th October , 2013</td>
+                        <td>5:49</td>
+                        <td>12</td>
+                      </tr>
+
+                      <tr>
+                      <td><img src="assets/images/campus-information/jai kumar sawant.png"></td>
+                       
+                        <td>	Mr. Jai Kumar Sawant</td>
+                        <td>Ministerial Staff</td>
+                        <td>19th October , 2013</td>
+                        <td>5:47</td>
+                        <td>13</td>
+                      </tr>
+                     
+                      <tr>
+                        <td><img src="assets/images/campus-information/pandurang kumbhar.png"></td>
+                         
+                          <td>	Mr. Pandurang Kumbhar</td>
+                          <td>Ministerial Staff</td>
+                          <td>19th October , 2013</td>
+                          <td>5:48</td>
+                          <td>14</td>
+                        </tr>
+
+                        <tr>
+                          <td><img src="assets/images/campus-information/ramhit mehto.png"></td>
+                           
+                            <td>	Mr. Ramhit Mehto</td>
+                            <td>Ministerial Staff</td>
+                            <td>19th October , 2013</td>
+                            <td>5:51</td>
+                            <td>15</td>
+                          </tr>
+
+                          <tr>
+                            <td><img src="assets/images/campus-information/firoz.png"></td>
+                             
+                              <td>Md. Firoz</td>
+                              <td>Ministerial Staff</td>
+                              <td>19th October , 2013</td>
+                              <td>5:51</td>
+                              <td>16</td>
+                            </tr>
+
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- DataTables JS -->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.table').DataTable({
+        "columnDefs": [
+          { "orderable": false, "targets": 5 }
+        ],
+        language: {
+          'paginate': {
+            'previous': '<span class="fa fa-chevron-left"></span>',
+            'next': '<span class="fa fa-chevron-right"></span>'
+          },
+          "lengthMenu": 'Display <select class="form-control input-sm">'+
+          '<option value="10">10</option>'+
+          '<option value="20">20</option>'+
+          '<option value="30">30</option>'+
+          '<option value="40">40</option>'+
+          '<option value="50">50</option>'+
+          '<option value="-1">All</option>'+
+          '</select> results'
+        }
+      });  
+    });
+  </script>
+
+
+<div include-html="/footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('/footer.html');
+    });
+  </script>
+
+</body>
+</html>

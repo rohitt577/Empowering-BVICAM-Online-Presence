@@ -1,0 +1,405 @@
+.section-title h1 {
+    text-align: center !important;
+}
+.sidebarModal.modal.right.fade {
+    overflow: hidden !important;
+}
+
+.modal-dialog {
+    max-width: unset !important;
+    width: calc(100% - 30px) !important; /* Adjust as needed */
+    margin: 15px 0 15px 15px !important; /* Adjust margin as needed */
+    right: 0 !important; /* Position the modal to the right */
+}
+
+.modal-content {
+    overflow: hidden !important;
+    border: none !important; /* Remove border if necessary */
+    box-shadow: none !important; /* Remove box shadow if necessary */
+}
+
+.modal-body {
+    padding: 0 !important; /* Remove padding if necessary */
+    overflow-y: auto !important; /* Enable scrolling if content is longer */
+}
+
+.contact-form {
+    padding: 15px !important; /* Adjust padding as needed */
+}
+
+.contact-table {
+    width: 100% !important; /* Adjust width as needed */
+}
+
+.sidebar-social-list {
+    list-style: none !important; /* Remove bullet points if necessary */
+    padding: 0 !important; /* Remove padding if necessary */
+}
+
+.sidebar-social-list li {
+    display: inline-block !important; /* Arrange social icons horizontally */
+    margin-right: 10px !important; /* Adjust margin as needed */
+}
+
+.sidebar-social-list li:last-child {
+    margin-right: 0 !important; /* Remove margin from the last social icon */
+}
+.modal-dialog {
+    max-width: unset !important;
+    width: calc(100% - 30px) !important; /* Adjust as needed */
+    margin: 15px 0 15px 15px !important; /* Adjust margin as needed */
+    right: 0 !important; /* Position the modal to the right */
+}
+
+.modal-content {
+    overflow: hidden !important;
+    border: none !important; /* Remove border if necessary */
+    box-shadow: none !important; /* Remove box shadow if necessary */
+}
+
+.modal-body {
+    padding: 0 !important; /* Remove padding if necessary */
+    overflow-y: auto !important; /* Enable scrolling if content is longer */
+}
+
+.contact-form {
+    padding: 15px !important; /* Adjust padding as needed */
+}
+
+.contact-table {
+    width: 100% !important; /* Adjust width as needed */
+}
+
+.sidebar-social-list {
+    list-style: none !important; /* Remove bullet points if necessary */
+    padding: 0 !important; /* Remove padding if necessary */
+}
+
+.sidebar-social-list li {
+    display: inline-block !important; /* Arrange social icons horizontally */
+    margin-right: 10px !important; /* Adjust margin as needed */
+}
+
+.sidebar-social-list li:last-child {
+    margin-right: 0 !important; /* Remove margin from the last social icon */
+}
+.sidebarModal.modal.right.fade {
+    overflow: hidden !important;
+}
+
+.modal-dialog {
+    max-width: unset !important;
+    width: calc(100% - 30px) !important; /* Adjust as needed */
+    margin: 15px !important; /* Adjust as needed */
+    right: 0 !important; /* Position the modal to the right */
+}
+
+.modal-content {
+    overflow: hidden !important;
+    border: none !important; /* Remove border if necessary */
+    box-shadow: none !important; /* Remove box shadow if necessary */
+}
+
+.modal-body {
+    padding: 0 !important; /* Remove padding if necessary */
+    overflow-y: auto !important; /* Enable scrolling if content is longer */
+}
+
+.contact-form {
+    padding: 15px !important; /* Adjust padding as needed */
+}
+
+.contact-table {
+    width: 100% !important; /* Adjust width as needed */
+}
+
+.sidebar-social-list {
+    list-style: none !important; /* Remove bullet points if necessary */
+    padding: 0 !important; /* Remove padding if necessary */
+}
+
+.sidebar-social-list li {
+    display: inline-block !important; /* Arrange social icons horizontally */
+    margin-right: 10px !important; /* Adjust margin as needed */
+}
+
+.sidebar-social-list li:last-child {
+    margin-right: 0 !important; /* Remove margin from the last social icon */
+}
+.sidebarModal.modal.right.fade {
+    overflow: hidden !important;
+}
+
+.modal-content {
+    overflow-y: hidden !important;
+}.sidebarModal.modal.right.fade {
+    overflow: hidden !important;
+}
+
+.modal-dialog {
+    max-width: unset !important;
+    width: calc(100% - 30px) !important; /* Adjust as needed */
+    margin: 15px !important; /* Adjust as needed */
+}
+
+.modal-content {
+    overflow: hidden !important;
+    border: none !important; /* Remove border if necessary */
+    box-shadow: none !important; /* Remove box shadow if necessary */
+}
+
+.modal-body {
+    padding: 0 !important; /* Remove padding if necessary */
+    overflow-y: auto !important; /* Enable scrolling if content is longer */
+}
+
+.contact-form {
+    padding: 15px !important; /* Adjust padding as needed */
+}
+
+.contact-table {
+    width: 100% !important; /* Adjust width as needed */
+}
+
+.sidebar-social-list {
+    list-style: none !important; /* Remove bullet points if necessary */
+    padding: 0 !important; /* Remove padding if necessary */
+}
+
+.sidebar-social-list li {
+    display: inline-block !important; /* Arrange social icons horizontally */
+    margin-right: 10px !important; /* Adjust margin as needed */
+}
+
+.sidebar-social-list li:last-child {
+    margin-right: 0 !important; /* Remove margin from the last social icon */
+}
+.sidebarModal.modal.right.fade {
+    overflow: hidden !important;
+}
+
+.modal-dialog {
+    max-width: unset !important;
+    width: calc(100% - 30px) !important; /* Adjust as needed */
+    margin: 15px !important; /* Adjust as needed */
+}
+
+.modal-content {
+    overflow: hidden !important;
+    border: none !important; /* Remove border if necessary */
+    box-shadow: none !important; /* Remove box shadow if necessary */
+}
+
+.modal-body {
+    padding: 0 !important; /* Remove padding if necessary */
+    overflow-y: auto !important; /* Enable scrolling if content is longer */
+}
+
+.contact-form {
+    padding: 15px !important; /* Adjust padding as needed */
+}
+
+.contact-table {
+    width: 100% !important; /* Adjust width as needed */
+}
+
+.sidebar-social-list {
+    list-style: none !important; /* Remove bullet points if necessary */
+    padding: 0 !important; /* Remove padding if necessary */
+}
+
+.sidebar-social-list li {
+    display: inline-block !important; /* Arrange social icons horizontally */
+    margin-right: 10px !important; /* Adjust margin as needed */
+}
+
+.sidebar-social-list li:last-child {
+    margin-right: 0 !important; /* Remove margin from the last social icon */
+}
+.sidebarModal.modal.right.fade {
+    overflow: hidden !important;
+}
+
+.modal-dialog {
+    max-width: unset !important;
+    width: calc(100% - 30px) !important; /* Adjust as needed */
+    margin: 15px 0 15px 15px !important; /* Adjust margin as needed */
+    right: 0 !important; /* Position the modal to the right */
+}
+
+.modal-content {
+    overflow: hidden !important;
+    border: none !important; /* Remove border if necessary */
+    box-shadow: none !important; /* Remove box shadow if necessary */
+}
+
+.modal-body {
+    padding: 0 !important; /* Remove padding if necessary */
+    overflow-y: auto !important; /* Enable scrolling if content is longer */
+}
+
+.contact-form {
+    padding: 15px !important; /* Adjust padding as needed */
+}
+
+.contact-table {
+    width: 100% !important; /* Adjust width as needed */
+}
+
+.sidebar-social-list {
+    list-style: none !important; /* Remove bullet points if necessary */
+    padding: 0 !important; /* Remove padding if necessary */
+}
+
+.sidebar-social-list li {
+    display: inline-block !important; /* Arrange social icons horizontally */
+    margin-right: 10px !important; /* Adjust margin as needed */
+}
+
+.sidebar-social-list li:last-child {
+    margin-right: 0 !important; /* Remove margin from the last social icon */
+}
+.sidebarModal.modal.right.fade {
+    overflow: hidden !important;
+}
+
+.modal-dialog {
+    max-width: unset !important;
+    width: calc(100% - 30px) !important; /* Adjust as needed */
+    margin: 15px 0 15px 15px !important; /* Adjust margin as needed */
+    right: 0 !important; /* Position the modal to the right */
+}
+
+.modal-content {
+    overflow: hidden !important;
+    border: none !important; /* Remove border if necessary */
+    box-shadow: none !important; /* Remove box shadow if necessary */
+}
+.main-logo {
+    margin-left: 400px;
+    height: 150px; 
+    width: auto; 
+    display: block; 
+    margin-bottom: 20px; 
+   
+}
+
+.modal-body {
+    text-align: center;
+   margin-left: 150px;
+   margin-right: 150px;
+padding: 30px !important; /* Remove padding if necessary */
+    overflow-y: auto !important; /* Enable scrolling if content is longer */
+
+}
+
+.contact-form {
+    padding: 15px !important; /* Adjust padding as needed */
+}
+
+.contact-table {
+    width: 100% !important; /* Adjust width as needed */
+}
+
+.sidebar-social-list {
+    list-style: none !important; /* Remove bullet points if necessary */
+    padding: 0 !important; /* Remove padding if necessary */
+}
+
+.sidebar-social-list li {
+    display: inline-block !important; /* Arrange social icons horizontally */
+    margin-right: 10px !important; /* Adjust margin as needed */
+}
+
+.sidebar-social-list li:last-child {
+    margin-right: 0 !important; /* Remove margin from the last social icon */
+}
+
+
+    .button {
+    color: black;
+    background-color: #e32845;
+    border: none;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin-top: 90px;
+    cursor: pointer;
+}
+.website_name {
+    text-align: center;
+    color: rgb(21, 21, 69);
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 350px;
+    margin-right: -500px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+}
+
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+
+}
+  body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.popup {
+  position: fixed; /* Keep the popup positioned */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  width: 400px;
+  background-color: #d31a1a;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hide the popup */
+}
+
+.popup h2 {
+  margin-bottom: 10px;
+}
+
+.popup button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup button:hover {
+  background-color: #2980b9;
+}

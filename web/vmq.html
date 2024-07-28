@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BVICAM | Where we turn you into a force </title>
+  </head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+.about {
+    border: 1px sandybrown #000; /* Adjust border color as needed */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* Adjust shadow color, size, blur, and spread as needed */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: $text;
+  background: aliceblue;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: 'EB Garamond', serif;
+  color: $black;
+  line-height: 1.1;
+}
+
+h2, h3 {
+  color: black;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.325rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin: 0 0 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  &:nth-child(4) {
+    margin: 0;
+  }
+  &.copyright {
+    margin: 1.5rem 0;
+  }
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  width: 40rem;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0 1.5rem 0 0;
+  }
+}
+
+.intro {
+  margin: 1rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+#logo {
+  color: black;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.grid {
+  > [class*="column-"] {
+    padding: 1rem;
+  }
+}
+
+.section-heading {
+  background-color: #96c8fa;
+  transform: rotate(0) translateX(0);
+}
+footer {
+  text-align: center;
+}
+
+@media (min-width: $md) {
+  body {
+    font-size: 1.125rem;
+  }
+  
+  h1 {
+    font-size: 3.25rem;
+  }
+  
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+  
+  img {
+    height: 10px;
+  }  
+}
+    </style>
+    
+
+ <div class="small">    
+
+  <div include-html="header.html" id="header"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function() {
+  $('#header').load('header.html');
+});
+</script>
+
+</div>
+
+    <main class="about">
+    <div class="container">
+      <section class="grid info">
+        <div class="column-xs-12 column-md-1">
+          <div class="about">
+            <h1 class="section-heading"><b>About Bharati Vidyapeeth's Institute Of Computer Applications and Management</b></h1>
+          </div>
+        </div>
+        <div class="column-xs-12 column-md-7">
+          <div class="intro">
+         <p><b><i>Vision</i></b></p><p>
+“To become a Total Quality Institute and contribute effectively towards national development in the era of rapidly changing global economy and ensure prosperity for the mankind at large”.</p><p>
+</p>
+<p><b><i>Mission</i></b></p><p>
+“The Institute shall strive hard to train young human beings to become dynamic, committed and self-motivated Total Quality Professionals to meet the rapidly changing multi-dimensional and multi-spherical futuristic challenges of the contemporary world”. 
+</p>
+<p> <b><i>Quality Policy</i></b></p><p>
+“The Institute shall focus on developing Professionals of very high intrinsic value, technically sound, emotionally balanced, spiritually high, socially sensitive, having responsibility, accountability and self-esteem in partnership with parents, corporate, academia and government”.</p>
+</div>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+<div include-html="footer.html" id="footer"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function() {
+    $('#footer').load('footer.html');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html><head>
+    <title>BVICAM | Where we turn you into a force</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,500,700');
+
+$white: #fff;
+$black: #2e2e2e;
+$gray: #787878;
+$highlight: #ea8478;
+$footer: #f7f7f7;
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: $gray;
+  background: $white;
+  text-rendering: optimizeLegibility;
+}
+
+ul li {
+  margin: 0 1.5rem 0 0;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  &:hover {
+    color: $black;
+  }
+  &.active {
+    color: $black;
+  }
+}
+
+nav {
+  padding: 2.5rem 0 2.5rem 0;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  li {
+    font-size: 1.25rem;
+    &:nth-child(2) {
+      margin: 0;
+    }
+  }
+}
+
+#highlight {
+  color: $highlight;
+  font-size: 1.25rem;
+}
+
+.gallery {
+  padding: 0 0 4rem 0;
+}
+
+.img-container {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover .img-content-hover {
+    display: block;
+  }
+}
+
+.column {
+img {
+	width: 100%;
+  height: 500px;
+	object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+}
+
+.img-content-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: $white;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+}
+
+.title {
+  color: $black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.category {
+  font-size: 1rem;
+  color: $gray;
+}
+
+.img-content {
+  display: none;
+}
+
+.social, .copyright {
+  margin: 1rem;
+}
+
+.social li {
+  display: inline-block;
+}
+
+footer {
+  padding: 1rem 0;
+  background: $footer;
+  text-align: center;
+}
+
+@supports (display: grid) {
+  .gallery .grid {
+    grid-gap: 1rem;
+  }
+}
+
+@media(min-width: $md) {
+  nav ul {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  img:hover {
+    transform: none;
+  }
+  
+  .img-container {
+    height: 100%;
+    &:hover .img-content-hover {
+      display: none;
+    }
+  }
+
+  .img-content {
+    display: block;
+    padding: 1rem 0;
+  }
+}
+ 
+    </style>
+
+    <div class="small">    
+
+      <div include-html="header.html" id="header"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#header').load('header.html');
+    });
+  </script>
+  
+  </div>
+
+
+<br><br>
+
+
+
+
+
+
+
+
+    <main class="about">
+    <div class="container">
+      <section class="grid info">
+        <div class="column" style="margin-left: 450px;">
+          <div class="about">
+            <h1 class="section-heading"><b>Activities At Bvicam</b></h1></div>
+          </div>
+
+<p>Workshops and Seminars not only present the students an insight of the industry, but also provide with the necessary inputs to enable them to churn out professionals. Activities like Faculty Development Programmes (FDPs) and Management Development Programmes (MDPs) are a regular feature at BVICAM. The Institute has conducted many FDPs and MDPs on the areas like SEI-CMM, ISO 9000, Networking, Embedded Systems, Information Security, etc. in which faculty members from Institutions across the country have participated, including the corporate delegates from reputed business houses. Additionally, Workshops, Seminars and Invited Talks are regularly being organized exclusively for students to enhance both Technical as well as Soft Skills. This also helps in strengthening the Industry-Institute relationship.
+</P>
+</div>
+        </div>
+      </section>
+    </div>
+  </main>
+    <body>
+
+<br>
+  <div class="container">
+    
+
+<section class="gallery">
+  <div class="container">
+    <div class="grid">
+      <div class="column">
+    <figure class="img-container">
+        <a href="criis.html">
+            <img src="assets/images/events/events-3.png" />
+            <figcaption class="img-content">
+                <h2 class="title">CRIIS</h2>
+                <h3 class="category">CRIIS</h3>
+            </figcaption>
+            <span class="img-content-hover">
+                <h2 class="title">CRIIS</h2>
+                <h3 class="category">Centre for Research and Innovation in Interdisciplinary Studies</h3>
+            </span>
+        </a>
+    </figure>
+</div>
+
+      <div class="column">
+        <figure class="img-container">
+            <a href="fdp.html">
+          <img src="assets/images/events/events-4.png" />
+          <figcaption class="img-content">
+            <h2 class="title">FDP</h2>
+            <h3 class="category">Faculty Development Programmes</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">FDP</h2>
+            <h3 class="category">Faculty Development Programme</h3>
+          </span></a>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="img-container">
+             <a href="mdp.html">
+          <img src="assets/images/events/events-5.png">
+          <figcaption class="img-content">
+            <h2 class="title">MDP</h2>
+            <h3 class="category">Management Development Programme</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">MDP</h2>
+            <h3 class="category">Management Development Programme</h3>
+          </span></a>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="img-container">
+             <a href="http://bvicam.ac.in/webinars/">
+          <img src="assets/images/events/events-6 (2).png" >
+          <figcaption class="img-content">
+            <h2 class="title">Tech Lecture Series</h2>
+            <h3 class="category">Expert lectures/Webinars</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Tech Lecture Series</h2>
+            <h3 class="category">Expert lectures/Webinars</h3>
+          </span></a>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="img-container">
+            <a href="http://bvicam.ac.in/indiacom/">
+          <img src="assets/images/events/events-7 (2).png" />
+          <figcaption class="img-content">
+            <h2 class="title">IndiaCom</h2>
+            <h3 class="category">Supported By IEEE</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">IndiaCom</h2>
+            <h3 class="category">Supported By IEEE</B></h3>
+          </span></a>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="img-container">
+         <a href="http://bvicam.ac.in/nsc/">
+          <img src="assets/images/events/events-9.png" />
+          <figcaption class="img-content">
+            <h2 class="title">NSC</h2>
+            <h3 class="category">National Students' Convention</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">NSC</h2>
+            <h3 class="category">National Students' Convention</h3>
+          </span></a>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="img-container">
+         <a href="404.html">
+          <img src="assets/images/events/events-11.png" />
+          <figcaption class="img-content">
+            <h2 class="title">BVICAM CSR</h2>
+            <h3 class="category">BVICAM CSR</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">BVICAM CSR</h2>
+            <h3 class="category">BVICAM CSR</h3>
+          </span></a>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="img-container">
+             <a href="club.html">
+          <img src="assets/images/events/events-10.png" />
+          <figcaption class="img-content">
+            <h2 class="title">Club Activities</h2>
+            <h3 class="category">Students' Club</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Club Activities</h2>
+            <h3 class="category">Students' Club</h3>
+          </span></a>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="img-container">
+             <a href="https://bvicam.ac.in/MediaSeries/">
+          <img src="assets/images/events/events-12.png" />
+          <figcaption class="img-content">
+            <h2 class="title">Media Lecture Series</h2>
+            <h3 class="category">Expert lectures/Webinars</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Media Lecture Series</h2>
+            <h3 class="category">Expert lectures/Webinars</h3>
+          </span></a>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12">
+       
+    </div>
+  </div>
+</footer>
+<script>
+
+    const imgContent = document.querySelectorAll('.img-content-hover');
+
+function showImgContent(e) {
+  for(var i = 0; i < imgContent.length; i++) {
+    x = e.pageX;
+    y = e.pageY;
+    imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  }
+};
+
+document.addEventListener('mousemove', showImgContent);
+</script>
+</div>
+</head>
+<div include-html="footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+
+</body>

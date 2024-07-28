@@ -1,0 +1,87 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* light gray background */
+            text-align: center; /* Center-align all content */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+            display: inline-block; /* Center-align container */
+        }
+
+        /* Navigation Styles */
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .button-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .dropdown-toggle {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            background-color: #e9ecef; /* light gray background */
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-toggle:hover {
+            background-color: #ced4da; /* slightly darker gray on hover */
+        }
+
+        .dropdown-toggle.active {
+            background-color: #007bff; /* blue color when active */
+            color: #fff;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            width: 200px;
+            padding: 10px 0;
+            background-color: #fff;
+            border: 1px solid #ced4da; /* light gray border */
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+            text-align: left; /* Left-align dropdown menu */
+        }
+
+        .dropdown-menu li {
+            padding: 10px 20px;
+            text-align: center; /* Center-align dropdown menu items */
+        }
+
+        .dropdown-menu li a {
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #f8f9fa; /* slightly darker gray on hover */
+        }
+
+        /* Footer */
+        #footer {
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc; /* light gray border on top */
+            text-align: center;
+        }

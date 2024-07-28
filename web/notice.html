@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<style>
+
+body{
+    background-color: aliceblue;
+    color: #370707;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-gap: 10px;
+}
+
+
+
+header{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 5px 0px;
+}
+
+#navbar ul li{
+    padding: 5% 0px;
+    border-bottom: 1px solid #040a36;
+}
+
+#main-doc{
+    padding: 2% 2%;
+    height: 480px;
+    overflow: auto;
+    background: rgba(116, 180, 228, 0.471);
+    box-shadow: 0 10px 20px rgba(3, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+a{
+    color:#040a36;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(5, 5, 49);
+}
+
+@media screen and  (max-width: 760px){
+    #wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #navbar{
+        height:200px;
+    }
+}
+
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+</style>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NOTICE BOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+ <div class="small">    
+
+    <div include-html="header.html" id="header"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function() {
+    $('#header').load('header.html');
+  });
+</script>
+</div>
+
+<div class="changes" style="padding-left: 40px; padding-right: 50px;">
+
+    <h1><center>NOTICE BOARD</center></h1>
+    <div id="wrapper">
+      <nav id="navbar">
+          <header>NAVIGATION</header>
+        <ul>
+          <li><a class="nav-link" href="notice.html">All Notices</a></li>
+          <li><a class="nav-link" href="admission.html">Admission</a></li>
+          <li><a class="nav-link" href="examination.html">Examination</a></li>
+          <li><a class="nav-link" href="t&pcell.html">Placement</a></li>
+          <li><a class="nav-link" href="studentcouncil.html">Student Welfare</a></li>
+          <li><a class="nav-link" href="timetable.html">Time Table</a></li>
+          <li><a class="nav-link" href="attendance.html">Attendance</a></li>
+          <li><a class="nav-link" href="activities.html">Activities</a></li>
+          <li><a class="nav-link" href="achievement.html">Achievement</a></li>
+          <li><a class="nav-link" href="https://bvicam.ac.in/indiacom/">IndiaCom</a></li>
+          <li><a class="nav-link" href="https://bvicam.ac.in/bijit/">BJIT</a></li>
+          <li><a class="nav-link" href="https://bvicam.ac.in/nsc/">NSC</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+    <table>
+        <thead>
+            <tr>
+                <th>NEWS TITLE</th>
+                <th>DATE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="dummy1.html">Theater for Social Change</a></td>
+                <td>25.03.2024</td>
+            </tr>
+            <tr>
+                <td><a href="dummy2.html">Women's Voices in Digital Media</a></td>
+                <td>01.03.2024</td>
+            </tr>
+            <tr>
+                <td><a href="dummy3.html">Science Communication in the Digital Age</a></td>
+                <td>20.02.2024</td>
+            </tr>
+            <tr>
+                <td><a href="dummy4.html">Technology & Language Preservation</a></td>
+                <td>16.02.2024</td>
+            </tr>
+            <tr>
+                <td><a href="dummy5.html">Radio: A Century Informing, Entertaining & Educating</a></td>
+                <td>12.02.2024</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+    </div>
+   
+
+    <div include-html="footer.html" id="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $('#footer').load('footer.html');
+      });
+    </script>
+
+ </div>
+  </body>
+</html>

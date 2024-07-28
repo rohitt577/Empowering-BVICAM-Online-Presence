@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="An example pen showing how a basic CSS Grid container can create a nice, responsive card layout.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BVICAM | Where we turn you into a force</title>
+  
+</head>
+<style>
+
+*,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+
+    /* GLOBAL */
+    html {
+      box-sizing: border-box;
+      font-size: 62.5%; /* 10px/16px */
+    }
+
+    body {
+        align-items: center;
+        text-align: center;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      
+      background-color: aliceblue;
+      font-family: "Verdana";
+    }
+
+    @media (max-width: 60em) {
+      body {
+        padding: 3rem;
+      }
+    }
+
+    /* MAIN CONTENT */
+    .grid {
+      display: grid;
+      width: 114rem;
+      grid-gap: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    @media (max-width: 60em) {
+      .grid {
+        grid-gap: 3rem;
+      }
+    }
+
+    .card {
+        align-self: center;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: .4rem;
+      overflow: hidden;
+      box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        transform: translateY(-.5%);
+        box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+      }
+
+      &__img {
+        display: block;
+        width: 100%;
+        height: 18rem;
+        object-fit: cover;
+      }
+
+      &__content {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-row-gap: 2rem;
+        padding: 2rem;
+        height: 100%;
+      }
+
+      &__header {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #0d0d0d;
+      }
+
+      &__text {
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 2.5rem;
+      }
+
+      &__btn {
+        display: block;
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 2rem;
+        text-align: center;
+        color: #3363ff;
+        background-color: #e6ecff;
+        border: none;
+        border-radius: .4rem;
+        transition: .2s;
+        cursor: pointer;
+
+        span {
+          margin-left: 1rem;
+          transition: .2s;
+        }
+
+        &:hover,
+        &:active {
+          background-color: #cdd9ff;
+
+          span {
+            margin-left: 1.5rem;
+          }
+        }
+      }
+    }
+  
+
+
+
+</style>
+
+
+<body>
+  
+  
+
+ <div class="small">    
+
+  <div include-html="/header.html" id="header"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function() {
+  $('#header').load('/header.html');
+});
+</script>
+<br>
+<br>
+
+
+<div class="changes" style="padding-left: 150px;">
+   <div class="page__container">
+    <div class="header">
+      <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;align-content: center;"><b>OTHER AMENITIES</b></h1>
+      <h2 id="header__description" style="padding-right: 50px;">In its own centrally located sprawling campus at A-4, Rohtak Road, Paschim Vihar, BVICAM provides all basic facilities to its students and staff. The campus besides basic teaching-learning facilities also provides other amenities like:</h2>
+      <div class="divider"></div>
+    </div>
+<BR>
+  <div class="grid">
+     <div class="card">
+      <img class="card__img" src="assets/images/slider-images/banner-img101.jpg" alt="Snowy Mountains">
+      <div class="card__content">
+        <h1 class="card__header">BANK</h1>
+        <div class="card__text-wrapper">
+          <br>
+          <p style="font-family: 'Times New Roman', Times, serif;"><b>An in-house banking facility is provided. The institute has Bharati Sahakari Bank, Co-operative Bank located in its campus. It is a multi-state Scheduled Co-operative Bank of Bharati Vidyapeeth, Pune.</b></p>
+        </div>
+        
+      </div>
+    </div>
+   <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img8.jpg" alt="Snowy Mountains">
+        <div class="card__content">
+        <h1 class="card__header">GUEST HOUSE</h1>
+        <div class="card__text-wrapper">
+          <br><br>
+          <p style="font-family: 'Times New Roman', Times, serif;"><b>The Institute has a Guest House having four double rooms with necessary amenities.</b></p>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img102.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+        <h1 class="card__header">CANTEEN</h1>
+        <div class="card__text-wrapper">
+          <p style="font-family: 'Times New Roman', Times, serif;"><b>Canteen has all modern amenities with facilities for dining, snacks, cold and hot drink, coffee, tea, soups dispensers, microwave oven and deep freezers.</b></p>
+        
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img101.jpg" alt="Snowy Mountains">
+        <div class="card__content">
+        <h1 class="card__header">ELECTRICITY AND POWER BACKUP FACILITY</h1>
+        <div class="card__text-wrapper">
+          <p style="font-family: 'Times New Roman', Times, serif;"><b>The Institute has online UPS which, in turn, is supported by Heavy Duty Generators as an alternate arrangement during power failure.</b></p>
+        
+        </div> </div>
+    </div>
+    <div class="card">
+      <img class="card__img" src="assets/images/slider-images/banner-img8.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+        <h1 class="card__header">REPROGRAPHIC FACILITIES</h1>
+        <div class="card__text-wrapper">
+          <p style="font-family: 'Times New Roman', Times, serif;"><b>A reprographic centre with Xerox machines, scanners, printers etc. is provided in the campus which takes care of all reprographic needs of the students.</b></p>
+        
+        </div>
+           </div>
+    </div>
+  
+    <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img101.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+        <h1 class="card__header">MEDICAL FACILITIES</h1>
+        <div class="card__text-wrapper">
+         <p style="font-family: 'Times New Roman', Times, serif;"><b>The Institute has a sick room, provided with First Aid box and a Visiting Doctor to attend to minor health problems of the student and staff. A full fledged hospital, Action Balaji Hospital, is adjacent to the BVICAM campus.
+
+</b></p>
+        
+        </div>
+         </div>
+    </div>
+     <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img102.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+        <h1 class="card__header">INTERNET FACILITY</h1>
+        <div class="card__text-wrapper">
+          <p style="font-family: 'Times New Roman', Times, serif;"><b>The Institute is connected to Internet with a 2 Mbps WiMax Connectivity. Internet facility for staff and student is available in labs till evening. Internet facility is also available in Library for students to browse the online journals. Hostel rooms are also equipped with internet facility.</b></p>
+        
+        </div>
+         </div>
+    </div>
+  
+    <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img101.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+                <h1 class="card__header">METRO CONNECTION</h1>
+        <div class="card__text-wrapper">
+       <p style="font-family: 'Times New Roman', Times, serif;"><b>The Institute is located adjacent to the Paschim Vihar (East) Metro Station and is thus well-connected.
+
+</b></p>
+        
+      </div>
+         </div>
+    </div>
+  
+    <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img102.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+        <h1 class="card__header">PLAYGROUND</h1>
+        <div class="card__text-wrapper">
+         <p style="font-family: 'Times New Roman', Times, serif;"><b>The sprawling campus is surrounded by 4.2 acre playground which houses facilities for students to indulge in outdoor sports activities. </b></p>
+        
+        </div>
+         </div>
+    </div>
+    <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img8.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+        <h1 class="card__header">SPORTS FACILITIES</h1>
+        <div class="card__text-wrapper">
+         <p style="font-family: 'Times New Roman', Times, serif;"><b>BVICAM provides excellent sports facilities for all its students. Besides a gymnasium, the Institute also ensures that its students refresh their energies by indulging in different outdoor and indoor sports activities like Cricket, Volleyball, basketball, Table Tennis, Carom Board etc. Annual intra-college sports events are a regular at the college. 
+
+</b></p>
+         </div>
+
+        </div>
+    </div>
+  
+    <div class="card">
+      <img class="card__img" src="assets/images/slider-images/banner-img102.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+        <h1 class="card__header">STAFF QUARTERS</h1>
+        <div class="card__text-wrapper">
+         <p style="font-family: 'Times New Roman', Times, serif;"><b>The teaching and non-teaching staff of the institute is also provided with staff quarter facility.  The centrally located, safe, noise-free, well-connected campus makes it a place worth living.</b></p>
+        
+        </div>
+           </div>
+    </div>
+  
+    <div class="card">
+       <img class="card__img" src="assets/images/slider-images/banner-img101.jpg" alt="Snowy Mountains">
+       <div class="card__content">
+        <h1 class="card__header">GYMNASIUM</h1>
+        <div class="card__text-wrapper">
+         <p style="font-family: 'Times New Roman', Times, serif;"><b>The Institute provides a state-of-the art gymnasium equipped with all modern exercise and training equipment for its students and staff. The facility can be availed by faculty and students free-of-cost.</b></p>
+        
+        </div>
+        </div>
+    </div>
+
+    <!-- Repeat the above card structure to create a total of 12 cards -->
+  
+  </div>
+  </div>
+</div>
+
+<div include-html="/footer.html" id="footer"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function() {
+    $('#footer').load('/footer.html');
+  });
+</script>
+</body>
+</html>

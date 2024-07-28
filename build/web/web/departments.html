@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic styling for the table */
+       .changes{
+margin-left: 100px;
+margin-right: 100px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            background-color: #bfe6ff;
+            border: 1px solid #0000009d;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            color: aliceblue;
+            background-color: #071d47;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="small">    
+
+        <div include-html="/header.html" id="header"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $('#header').load('/header.html');
+      });
+    </script>
+    
+    </div>
+
+
+
+<br><br>
+
+<div class="changes">
+
+
+    <h2 style="text-align: center;">DEPARTMENTS</h2>
+    <hr>
+    <h3>Department of Computer Science and  Applications</h3>
+    <h4>Programme(s):</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name of Programme(s)</th>
+                <th>Level</th>
+                <th>Duration</th>
+                <th>Annual Intake (Shift 1)</th>
+                <th>Annual Intake (Shift 2)</th>
+                <th>Year of Starting</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Mater of Computer Applications<br><b>(MCA)</b></td>
+                <td>PG</td>
+                <td>2 years</td>
+                <td>120</td>
+                <td>-</td>
+                <td>2002</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <h3>Department of Journalism and Mass Communication</h3>
+    <h4>Programme(s):</h4>
+    
+<table>
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name of Programme(s)</th>
+                <th>Level</th>
+                <th>Duration</th>
+                <th>Annual Intake (Shift 1)</th>
+                <th>Annual Intake (Shift 2)</th>
+                <th>Year of Starting</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Bachelor of Arts (Journalism and Mass Communication)<br><b>(BA(JMC))</b></td>
+                <td>UG</td>
+                <td>3 years</td>
+                <td>120</td>
+                <td>120</td>
+                <td>2021</td>
+            </tr>
+        </tbody>
+    </table></div>
+
+    <div include-html="/footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('/footer.html');
+    });
+  </script>
+
+
+
+
+</body>
+</html>

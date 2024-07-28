@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+       <style>
+        /* General Styling */
+        body {
+            background: #e0e5ec;
+            font-family: 'Lato', sans-serif;
+            color: #353535;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Section Title */
+        .section-title h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        /* Table Styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Button Styling */
+        .custom-btn {
+            width: 200px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-weight: 500;
+            background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            outline: none;
+            border: none;
+            box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+        }
+
+        .custom-btn:hover {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        /* First and Second Preferences */
+        .firstPreference {
+            color: blue;
+        }
+
+        .secondPreference {
+            color: red;
+        }
+   
+        .section-title h1 {
+    text-align: center !important;
+}
+.sidebarModal.modal.right.fade {
+    overflow: hidden !important;
+}
+
+.modal-content {
+    overflow-y: hidden !important;
+}
+ table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+.firstPreference {
+    color: blue;
+}
+
+.secondPreference {
+    color: red;
+}
+body {
+  background: #e0e5ec;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-3 {
+  background: rgb(3, 38, 51);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 430px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  color: #353535;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+    color: #353535;
+  height: 0%;
+  width: 200px;
+}
+.btn-3:after {
+    color: #353535;
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+height: 2px;
+  width: 120px;
+}
+.btn-3 span:hover{
+   color: rgb(0, 0, 0);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 00%;
+}
+.btn-3 span:hover:after {
+  width: 100;
+}
+    </style>   
+   <body>
+    <div class="small">    
+
+      <div include-html="header.html" id="header"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#header').load('header.html');
+    });
+  </script>
+  </div>
+  
+
+  <div class="changes" style="padding-left: 80px;">
+<div class="academics-details-area ">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="academics-details">
+<div class="details">
+  <br>
+  <br>
+<h1>ADMISSIONS IN BVICAM</h1>
+<br>
+<br>
+    <table>
+        <thead>
+            <tr>
+                <th>S. No.</th>
+                <th>Name of the Programme(s)</th>
+                <th>Level</th>
+                <th>Duration</th>
+                <th>Annual Intake</th>
+                <th>Year of Starting</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Master of Computer Applications (MCA)</td>
+                <td>PG</td>
+                <td>2 Years</td>
+                <td>120</td>
+                <td>2002</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bachelor of Arts (Journalism and Mass Communication) - BA/JMC</td>
+                <td>UG</td>
+                <td>3 Years</td>
+                <td>120</td>
+                <td>2021</td>
+            </tr>
+        </tbody>
+    </table>
+
+<div class="regiStartion-and-fee">
+<h3>Admisions in MCA Programme</h3>
+<p>During the Academic Year 2023-2024, admission to the MCA Programme of this Institute shall be done through centralized Counselling to be conducted by GGSIP University, New Delhi, based upon the rank obtained by the students in the following tests:-</p>
+<div class="list">
+<ul>
+<li>1. NIT MCA Common Entrance Test (NIMCET – 2023) conducted by NIT Jamshedpur. More details regarding the NIMCET-2023 can be obtained from the NIMCET website <a href="https://www.nimcet.in/."> https://www.nimcet.in/.</a></li>
+<li>2. GGSIPU Common Entrance Test (CET-2023; CET Code-105) conduct by GGSIP University, New Delhi. More details regarding the CET-2023 can be obtained from the GGSIP University website <a href="http://www.ipu.ac.in/.">http://www.ipu.ac.in/.</a></li>
+<li>3. Common University Entrance Test (CUET-2023)  conduct by National Test Agency (NTA). More details regarding the CUET-2023 can be obtained from the NTA website <a href="https://nta.ac.in/.">https://nta.ac.in/.</a></li>
+<p> </p>
+<p>Candidates should note that while making admissions, the order of the preference of various CETs shall be maintained as NIMCET – 2023: 1st Preference;  GGSIPU CET-2023: 2nd Preference and  CUET-2023: 3rd Preference. This means that the 1st Preference shall be given to the NIMCET qualified candidates. If seats remain vacant, after exhausting the entire Merit List of the NIMCET Qualified candidates, GGSIPU CET-2023 qualified candidates shall be considered and given 2nd Preference. However, if seats still remain vacant, after exhausting the Merit List of the GGSIPU CET-2023 Qualified candidates, CUET-2023 qualified candidates shall be considered and given 3rd Preference.</p>
+</ul>
+</div>
+</div>
+<div class="prepare-exam">
+<h3>Admissions in BA(JMC) Programme</h3>
+<p>During the Academic Year 2023-2024, admission to the BA (JMC) Programme of this Institute shall be done through centralized Counselling to be conducted by GGSIP University, New Delhi, based upon the rank obtained by the students in the following tests:-</p>
+<li>1. GGSIPU Common Entrance Test (CET-2023; CET Code-126) conduct by GGSIP University, New Delhi. More details regarding the CET-2023 can be obtained from the GGSIP University website  <a href="http://www.ipu.ac.in/."> http://www.ipu.ac.in/.</a></li>
+<li>2. Common University Entrance Test (CUET-2023)  conduct by National Test Agency (NTA). More details regarding the CUET-2023 can be obtained from the NTA website <a href="https://nta.ac.in/."> https://nta.ac.in/.</a></li>
+<p>Candidates should note that while making admissions, the order of the preference of various CETs shall be maintained as <a class="firstPreference">GGSIPU CET-2023: 1st Preference</a> and  <a class="secondPreference">CUET-2023: 2nd Preference</a>. This means that the 1st Preference shall be given to the GGSIPU CET-2023 qualified candidates. If seats remain vacant, after exhausting the entire Merit List of the GGSIPU CET-2023 Qualified candidates, CUET-2023 qualified candidates shall be considered and given 2nd Preference. 
+</p><p>
+Based upon the rank obtained by the candidates in the NIMCET-2023 or GGSIPU CET-2023 or CUET-2023, GGSIP University, New Delhi, will conduct centralized counseling for allocation of seats to the desirous candidates rank-wise. After having qualified the CET, all the candidates will have to register for the centralized counseling to be conducted by the GGSIP University, New Delhi. During the centralized counselling conducted by GGSIP University, Priority Order shall be maintained, as mentioned above, programme-wise. Further details in this regard may be obtained from the website of GGSIP University http://www.ipu.ac.in. It is, therefore, advised to all the desirous students to appear for all the CETs i.e. NIMCET-2023, GGSIPU CET-2023 and CUET-2023.</p>
+<div class="query text-center">
+     <a href="mgmt_quota.html" button class="custom-btn btn-3" style="color: #353535"><span>INFORMATION ON MANAGEMENT QUOTA</span></button>
+     </a>
+     <br>
+     <br>
+</div>
+</div>
+</div>
+</div><div class="academics-list">
+<h3>Admission Procedure</h3>
+<ul>
+<p>The admission to the MCA and BA (JMC) Programmes of this Institute is governed by the rules and regulations of Guru Gobind Singh Indraprastha (GGSIP) University, New Delhi, and Govt. of NCT, Delhi. Detailed Procedure is enumerated hereunder and can also be referred at <a href="www.ipu.ac.in."> www.ipu.ac.in.</a><p> For more details, Admission Committee may be contacted, on the below mentioned contact details.</p>
+</ul>
+<table>
+     <tr>
+                <th>Admission Committee</th>
+                <th>+91 - 8130176573, 9667507437, 9650746124, 
+  +91 - 11 - 25275055, 25255056</th>
+                <th>mca@bvicam.ac.in</th>
+               
+            </tr>
+        </thead>
+
+</table>
+<h3>Admisions in MCA Programme</h3>
+<p>During the Academic Year 2023-2024, admission to the MCA Programme of this Institute shall be done through centralized Counselling to be conducted by GGSIP University, New Delhi, based upon the rank obtained by the students in the following tests:-</p>
+<div class="list">
+<ul>
+<li>1. NIT MCA Common Entrance Test (NIMCET – 2023) conducted by NIT Jamshedpur. More details regarding the NIMCET-2023 can be obtained from the NIMCET website <a href="https://www.nimcet.in/."> https://www.nimcet.in/.</a></li>
+<li>2. GGSIPU Common Entrance Test (CET-2023; CET Code-105) conduct by GGSIP University, New Delhi. More details regarding the CET-2023 can be obtained from the GGSIP University website <a href="http://www.ipu.ac.in/.">http://www.ipu.ac.in/.</a></li>
+<li>3. Common University Entrance Test (CUET-2023)  conduct by National Test Agency (NTA). More details regarding the CUET-2023 can be obtained from the NTA website <a href="https://nta.ac.in/.">https://nta.ac.in/.</a></li>
+<p> </p>
+<p>Candidates should note that while making admissions, the order of the preference of various CETs shall be maintained as NIMCET – 2023: 1st Preference;  GGSIPU CET-2023: 2nd Preference and  CUET-2023: 3rd Preference. This means that the 1st Preference shall be given to the NIMCET qualified candidates. If seats remain vacant, after exhausting the entire Merit List of the NIMCET Qualified candidates, GGSIPU CET-2023 qualified candidates shall be considered and given 2nd Preference. However, if seats still remain vacant, after exhausting the Merit List of the GGSIPU CET-2023 Qualified candidates, CUET-2023 qualified candidates shall be considered and given 3rd Preference.</p>
+</ul>
+</div>
+</div>
+<div class="prepare-exam">
+<h3>Admissions in BA(JMC) Programme</h3>
+<p>During the Academic Year 2023-2024, admission to the BA (JMC) Programme of this Institute shall be done through centralized Counselling to be conducted by GGSIP University, New Delhi, based upon the rank obtained by the students in the following tests:-</p>
+<li>1. GGSIPU Common Entrance Test (CET-2023; CET Code-126) conduct by GGSIP University, New Delhi. More details regarding the CET-2023 can be obtained from the GGSIP University website  <a href="http://www.ipu.ac.in/."> http://www.ipu.ac.in/.</a></li>
+<li>2. Common University Entrance Test (CUET-2023)  conduct by National Test Agency (NTA). More details regarding the CUET-2023 can be obtained from the NTA website <a href="https://nta.ac.in/."> https://nta.ac.in/.</a></li>
+<p>Candidates should note that while making admissions, the order of the preference of various CETs shall be maintained as <a class="firstPreference">GGSIPU CET-2023: 1st Preference</a> and  <a class="secondPreference">CUET-2023: 2nd Preference</a>. This means that the 1st Preference shall be given to the GGSIPU CET-2023 qualified candidates. If seats remain vacant, after exhausting the entire Merit List of the GGSIPU CET-2023 Qualified candidates, CUET-2023 qualified candidates shall be considered and given 2nd Preference. 
+</p><p>
+Based upon the rank obtained by the candidates in the NIMCET-2023 or GGSIPU CET-2023 or CUET-2023, GGSIP University, New Delhi, will conduct centralized counseling for allocation of seats to the desirous candidates rank-wise. After having qualified the CET, all the candidates will have to register for the centralized counseling to be conducted by the GGSIP University, New Delhi. During the centralized counselling conducted by GGSIP University, Priority Order shall be maintained, as mentioned above, programme-wise. Further details in this regard may be obtained from the website of GGSIP University http://www.ipu.ac.in. It is, therefore, advised to all the desirous students to appear for all the CETs i.e. NIMCET-2023, GGSIPU CET-2023 and CUET-2023.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div include-html="footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('footer.html');
+    });
+  </script>
+   </body>
+</html>  
+      

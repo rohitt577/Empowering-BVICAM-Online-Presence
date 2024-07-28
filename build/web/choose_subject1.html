@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown with Multiple Checkbox Select</title>
+    <link rel="stylesheet" href="assets\css\choose_subject.css">
+    <style>
+        /* Add any additional CSS styling here */
+    </style>
+</head>
+<body>
+    
+     <div class="small">    
+
+    <div include-html="header.html" id="header"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function() {
+    $('#header').load('header.html');
+  });
+</script>
+
+<ul class="nav">
+ 
+  <li class="button-dropdown">
+    <a href="javascript:void(0)" class="dropdown-toggle">
+      Select Subject<span>▼</span>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="OOSE.html">
+        Object Oriented Software Engineering
+        </a>
+      </li>
+      <li>
+        <a href="DFS.html">
+        Data and File Structures
+        </a>
+      </li>
+      <li>
+        <a href="Python.html">
+        Python Programming
+        </a>
+      </li>
+      <li>
+        <a href="FSD.html">
+            Full Stack Development
+        </a>
+      </li>
+<li>
+        <a href="Digital_Marketing.html">
+         	Digital Marketing
+        </a>
+      </li>
+
+    </ul>
+  </li>
+  
+    </ul>
+  </li>
+</ul>
+
+
+ <div include-html="footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('footer.html');
+    });
+  </script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+ 
+
+<script>
+
+jQuery(document).ready(function (e) {
+    function t(t) {
+        e(t).bind("click", function (t) {
+            t.preventDefault();
+            e(this).parent().fadeOut()
+        })
+    }
+    e(".dropdown-toggle").click(function () {
+        var t = e(this).parents(".button-dropdown").children(".dropdown-menu").is(":hidden");
+        e(".button-dropdown .dropdown-menu").hide();
+        e(".button-dropdown .dropdown-toggle").removeClass("active");
+        if (t) {
+            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+        }
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+    })
+});
+
+    
+</script>
+
+</body>
+</html>

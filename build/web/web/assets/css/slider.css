@@ -1,0 +1,67 @@
+
+    #myCarousel .carousel-inner img {
+        width: 100%;
+        height: auto;
+        max-height: 800px; 
+    }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Styles */
+.section {
+  background-color: ;
+  border-radius: 10px; 
+  padding: 100px;
+  margin: 10px;
+}
+
+.quick-links {
+  background-color: #0c71ca;  
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  background-position: center; 
+  background-size: cover; 
+  overflow: hidden; 
+  color: #fff; 
+  
+}
+
+.news {
+  background-color: #e0e0e0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styles */
+a {
+  color: #007bff; /* Set default link color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Add smooth color transition on hover */
+}
+
+a:hover {
+  color: #333; /* Change link color on hover */
+}
+
+/* h2 Styles */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Content Styles */
+.content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 5px;
+}
+

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/meanmenu.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<link rel="stylesheet" href="assets/css/flaticon.css">
+<link rel="stylesheet" href="assets/css/remixicon.css">
+<link rel="stylesheet" href="assets/css/odometer.min.css">
+<link rel="stylesheet" href="assets/css/aos.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/dark.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="icon" type="image/png" href="assets/images/Logo/bvicam_mainlogo.png">
+<title>BVICAM | Where we turn you into a force</title>
+<style>
+    .header-fixed {
+	background-color:#292c2f;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+
+.logo{
+    height: 100px;
+    margin-left: 1300px;
+    margin-top: -100px;
+}
+/* Logo */
+
+
+
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
+/*
+	 We are clearing the body's margin and padding, so that the header fits properly.
+	 We are also adding a height to demonstrate the scrolling behavior. You can remove
+	 these styles.
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 1500px;
+}
+
+        /* Adjusted CSS for header-left */
+        .header-left {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .header-left img.logo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Adjusted CSS for header-right */
+        .header-right {
+            display: inline-block;
+            vertical-align: middle;
+            float: right; /* Float the header-right to the right */
+        }
+
+        .header-right .list {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .header-right .button {
+            font-size: 12px; /* Adjust as needed */
+            margin: 0 5px; /* Add margin between buttons */
+        }
+        .logo1{
+            height: 90px;
+        }
+        .list{
+            margin-left: 1390px;
+        }
+    
+/* Style for the top header area */
+.top-header-area {
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+/* Style for the left content */
+.header-left-content {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+/* Style for the website name */
+.website_name {
+    margin-left: 10px; /* Add some margin between the image and text */
+}
+
+/* Style for the right content */
+.header-right-content {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Style for the list */
+
+
+/* Style for the buttons */
+.button {
+    margin-top: 5px; /* Add some space between the buttons */
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+    
+
+    <div class="top-header-area" style="background-color: white;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="header-left">
+                        <img src="assets/images/Logo/bvicam_mainlogo.png" alt="logo" class="logo1">
+                        <img src="assets/images/Logo/golden_jubilee.png" alt="Golden Jubilee" class="logo">
+                          <div class="list">
+                             <a href="notice.html" class="button">NOTICE</a>
+                            <a href="account_creation.html" class="button">LOGIN</a></div></div></div>
+                        </div>
+                            <div class="text_right" style="margin-left: 20px;">
+                                <div class="website_name" style="margin-top: -25px; margin-left: 100px; font-size: 20px;">
+                                    <br>
+                                     <div class="wrapper"><p class="shimmer">
+                                    <div class="website_name_high" style="margin-left: -500px;margin-top: -180px;">
+                                        <h1>Bharati Vidyapeeth's </h1>
+                                    </div>
+                                    <div class="website_name_high" style="margin-left: -600px; margin-top:    00px;">
+                                        <h1> Institute Of Computers Applications and Management </h1>
+                                    </div>
+                                    <div class="website_name_high" style="margin-left: -600px; margin-top: 0;">
+                                        <h1>(BVICAM)</h1>
+                                        <h3>MCA | BA(JMC)</h3>
+                                    </div>
+                            </div>
+                        </p>
+                            </div>
+                     
+	
+    </div>
+    
+
+<div class="navbar-area nav-bg-1">
+<div class="mobile-responsive-nav">
+<div class="container1">
+<div class="mobile-responsive-menu">
+<div class="logo">
+<a href="index.html">
+<img src="assets/images/bvicam_mainlogo.png" class="main-logo" lt="logo">
+<img src="assets/images/bvicam_mainlogo.png" class="white-logo" alt="logo">
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="desktop-nav">
+<div class="container-fluid">
+<nav class="navbar navbar-expand-md navbar-light">
+
+<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto">
+  <li class="nav-item"> 
+    <a href="index.html" >Home</a>
+</li>
+
+
+<li class="nav-item">
+<a href="about_bvicam.html" class="nav-link dropdown-toggle">
+About Us
+</a>
+<ul class="dropdown-menu">
+
+<li class="nav-item">
+<a href="index.html" class="nav-link dropdown-toggle">
+About Bharati Vidyapeeth
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="ABOUT_PUNE.html" class="nav-link">About BVP, Pune</a>
+</li>
+<li class="nav-item">
+<a href="about_bvicam.html" class="nav-link">About BVICAM</a>
+</li>
+<li class="nav-item">
+<a href="VMQ.html" class="nav-link">Vision, Mission & Quality</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="founder.html" class="nav-link">Founder's Message</a>
+</li>
+<li class="nav-item">
+<a href="chancellor.html" class="nav-link">Chancellor's Message</a>
+</li>
+<li class="nav-item">
+<a href="secretary.html" class="nav-link">Secretary's Message</a>
+</li>
+<li class="nav-item">
+<a href="Director-3.html" class="nav-link">Director's Corner</a>
+</li>
+<li class="nav-item">
+<a href="governingbody.html" class="nav-link">Governing Body</a>
+</li>
+<li class="nav-item">
+<a href="facultycouncil.html" class="nav-link">Faculty Council</a>
+</li>
+<li class="nav-item">
+<a href="404.html" class="nav-link">Administrative Structure</a>
+</li>
+<li class="nav-item">
+<a href="studentcouncil.html" class="nav-link">Students' Council</a>
+</li>
+<li class="nav-item">
+<a href="supportstaff.html" class="nav-link">Support Staff</a>
+</li>
+<li class="nav-item">
+<a href="photo_gallery.html" class="nav-link">Photo Gallery</a>
+</li>
+<ul class="dropdown-menu">
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="bajmc_programme.html" class="nav-link dropdown-toggle">
+Academics
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="director-2.html" class="nav-link">Director</a>
+</li>
+
+<li class="nav-item">
+<a href="faculty_council.html" class="nav-link dropdown-toggle">
+Faculty
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="research_area.html" class="nav-link">Research Area</a>
+</li>
+<li class="nav-item">
+<a href="publication_bvicam.html" class="nav-link">Publications</a>
+</li>
+</ul>
+<li class="nav-item">
+<a href="departments.html" class="nav-link">Department</a>
+</li>
+<li class="nav-item">
+<a href="admission.html" class="nav-link">Admission</a>
+</li>
+<li class="nav-item">
+<a href="fee_structure.html" class="nav-link">Fee Structure</a>
+</li>
+<li class="nav-item">
+<a href="bajmc_programme.html" class="nav-link dropdown-toggle">
+Academic Programme
+</a>
+<li class="nav-item">
+<a href="bajmc_programme.html" class="nav-link dropdown-toggle">
+Syllabus & Material
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="mca_syllabus.html" class="nav-link">MCA</a>
+</li>
+<li class="nav-item">
+<a href="1YCM.html" class="nav-link">BAJMC</a>
+</ul>
+</li>
+</li>
+<li class="nav-item">
+<a href="teaching_pedagogy.html" class="nav-link">Teaching Pedagogy</a>
+</li>
+<li class="nav-item">
+<a href="student-teacher-wardship.html" class="nav-link">Student Teacher Wardship</a>
+</li>
+<li class="nav-item">
+<a href="brochure.html" class="nav-link">Institute Brochure</a>
+<li class="nav-item">
+<a href="http://bvicam.in/lms/" class="nav-link">BVICAM LMS</a>
+</li>
+<li class="nav-item">
+<a href="https://edu.google.com/intl/ALL_us/workspace-for-education/classroom/" class="nav-link">Google Classroom</a>
+</li>
+</li>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="index.html" class="nav-link dropdown-toggle">
+Infrastructure
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="campus.html" class="nav-link">Campus</a>
+</li>
+<li class="nav-item">
+<a href="crc.html" class="nav-link">Laboratories</a>
+</li>
+<li class="nav-item">
+<a href="lrc.html" class="nav-link">Library</a>
+</li>
+<li class="nav-item">
+<a href="auditorium.html" class="nav-link">Auditorium</a>
+</li>
+<li class="nav-item">
+<a href="hostel.html" class="nav-link">Hostel</a>
+</li>
+<li class="nav-item">
+<a href="index.html" class="nav-link">Virtual Tour of Campus</a>
+</li>
+<li class="nav-item">
+<a href="other_amenities.html" class="nav-link">Other Facilities</a>
+</li>
+<li class="nav-item">
+<a href="amphitheatre.html" class="nav-link">Amphitheatre</a>
+</li>
+<li class="nav-item">
+<a href="Professional_associations.html" class="nav-link">Professional Associations</a>
+</li>
+<li class="nav-item">
+<a href="crc.html" class="nav-link">Computer Resource Center</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="activities.html" class="nav-link dropdown-toggle">
+Activities
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="criis.html" class="nav-link">CRIIS</a>
+</li>
+<li class="nav-item">
+<a href="fdp.html" class="nav-link">FDP</a>
+</li>
+<li class="nav-item">
+<a href="mdp.html" class="nav-link">MDP</a>
+</li>
+<li class="nav-item">
+<a href="https://bvicam.ac.in/webinars/" class="nav-link">Expert lectures/webinars</a>
+</li>
+<li class="nav-item">
+<a href="https://bvicam.ac.in/indiacom/" class="nav-link">Indicom</a>
+</li>
+<li class="nav-item">
+<a href="https://bvicam.ac.in/nsc/" class="nav-link">NSC</a>
+</li>
+<li class="nav-item">
+<a href="404.html" class="nav-link">BVICAM CSR</a>
+</li>
+<li class="nav-item">
+<a href="club.html" class="nav-link">Club activities</a>
+</li>
+<li class="nav-item">
+<a href="https://bvicam.ac.in/MediaSeries/" class="nav-link">Media lecture series</a>
+</li>
+</ul>
+</li>
+
+<li class="nav-item">
+<a href="Director.html" class="nav-link dropdown-toggle">
+Placements
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="Director.html" class="nav-link">Director's Message</a>
+</li>
+<li class="nav-item">
+<a href="t&pcell.html" class="nav-link">Training & Placement Cell</a>
+</li>
+<li class="nav-item">
+<a href="Placement_history.html" class="nav-link">Placement History</a>
+</li>
+<li class="nav-item">
+<a href="recruting_company.html" class="nav-link">Recruting Companies</a>
+</li>
+<li class="nav-item">
+<a href="placement_trends.html" class="nav-link">Placement Trends</a>
+</li>
+</ul>
+</li>
+
+<li class="nav-item">
+<a href="publications.html" class="nav-link dropdown-toggle">
+Publications
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="https://bvicam.ac.in/bjit/" class="nav-link">BJIT</a>
+</li>
+<li class="nav-item">
+<a href="https://bvicam.ac.in/indiacom/" class="nav-link">Indicom Proceedings</a>
+</li>
+<li class="nav-item">
+<a href="https://bvicam.ac.in/ijrms/" class="nav-link">IJRMS</a>
+</li>
+<li class="nav-item">
+<a href="404.html" class="nav-link">Faculty Publications</a>
+</li>
+<li class="nav-item">
+<a href="coming-soon.html" class="nav-link">E-magazines</a>
+</li>
+</li>
+<li class="nav-item">
+<a href="404.html" class="nav-link">E-newsletter</a>
+</li>
+</li>
+<li class="nav-item">
+<a href="https://bvicam.ac.in/nsc/" class="nav-link">NSC</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link dropdown-toggle">
+Alumni
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<li class="nav-item">
+<a href="404.html" class="nav-link">
+List
+</a>
+<ul class="dropdown-menu"></ul>
+</li>
+<li class="nav-item">
+<a href="alumni_council.html" class="nav-link">Alumni Council</a>
+</li>
+<li class="nav-item">
+<a href="almuni_meet.html" class="nav-link">Alumni Meets</a>
+</li>
+<li class="nav-item">
+<a href="alumni_council.html" class="nav-link">Alumni Activities</a>
+</li>
+<li class="nav-item">
+<a href="coming-soon.html" class="nav-link">
+BVP Golden Jubilee Alumni Meet
+</a>
+</ul>
+</li>
+<li class="nav-item">
+<a href="contact-us.html" class="nav-link">Contact Us</a>
+</li>
+</ul>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

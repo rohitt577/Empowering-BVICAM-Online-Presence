@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Popups</title>
+    <style>
+        body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+}
+.info {
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black; 
+    
+}
+
+/* Pop-up buttons begin */
+
+.flex-container {
+    height: 35%;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    font-size: 1.7rem;
+    /* Text outline begin */
+    font-weight: 900;
+    
+    
+    /* Text outline end */
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 1.5s ease-out; /* does not work */
+}
+
+
+.pop-up-button:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 415px;
+    width: 1px;
+    height: 100px;
+    background-color: #0d1b44;
+    
+}
+
+.pop-up-button:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/65647/sea-scotland-rest-rock-65647.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+
+/* Pop-up buttons end */
+/* Pop-up second layer begin */
+
+.pop-up-overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: opacity 500ms;
+    visibility: hidden;
+    color: visible;
+    opacity: 1;
+}
+
+.pop-up-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pop-up {
+    text-align: center;
+}
+
+.pop-up p {
+    margin: 5% 10% 0 10%;
+}
+
+.pop-up a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 200%;
+    top: 3.5%;
+    right: 5%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #8da6dd;
+}
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    padding: 8px;
+}
+tbody tr:nth-child(even) {
+    background-color: #91a3df;
+}
+
+
+    </style>
+</head>
+
+<body>
+    
+ <div class="small">    
+
+    <div include-html="/header.html" id="header"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function() {
+    $('#header').load('/header.html');
+  });
+</script>
+</div>
+<br>
+<br>
+
+
+
+
+    <h1 class="info">FEE Structure</h1>
+    <p>The Annual Fee of the Institute is recommended by the State Fee Regulatory Committee (SFRC) of the Govt of NCT of Delhi</p>
+<div class="flex-container">
+    <br>
+  <a  class="pop-up-button" href="#pop-up-one">
+    <p>fee structure of<br>MCA</p>
+    
+  </a>
+  <a  class="pop-up-button" href="#pop-up-two">
+    <p>fee structure of<br>BA(JMC)</p>
+  </a>
+</div>
+<br>
+<br>
+<div id="pop-up-one" class="pop-up-overlay">
+  <div class="pop-up">
+    <h1>Fee Structure for MCA Programme:</h1>
+    <a class="close" href="#">&times;</a>
+    <p>Annual Fee structure for MCA Programme at BVICAM, New Delhi, as recommended by the 05th SFRC, Govt. of NCT of Delhi, Vide F. No.: DHE  4(11) / 05th SFRC / 2021 / 2148-58 dated 10-04-2023,  effective for the years 2022-2023; 2023-2024 and 2024-2025 is as under:-</p>
+<table>
+        <caption>Fee Details</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Fee Details</th>
+                <th colspan="2">Amount (INR)</th>
+            </tr>
+            <tr>
+                <th>1st Year (Batch 2024-2026)</th>
+                <th>2nd Year (Batch 2023-2025)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Institute's Share</th>
+                
+            </tr>
+            <tr>
+                <td>Academic Fee of the Institute</td>
+                <td>1,75,500.00</td>
+                <td>1,63,300.00</td>
+            </tr>
+            <tr>
+                <td>Students' Activity Fee</td>
+                <td>01,000.00</td>
+                <td>01,000.00</td>
+            </tr>
+            <tr>
+                <td>Alumni Fees (Paid only in 1st year)</td>
+                <td>02,000.00	</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Subtotal Fee</td>
+                <td>1,78,500.00</td>
+                <td>1,64,300.00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Security Deposit (Refundable)</td>
+            </tr>
+            <tr>
+                <td>Security Deposit (Refundable) Paid only in 1st year</td>
+                <td>10,000</td>
+                <td>-</td>  
+            </tr>
+            <tr>
+                <td colspan="3">University's Share</td>
+            </tr>
+            <tr>
+                <td>University Fee (includes Examination fee for two semesters, enrollment fee, etc.)</td>
+                <td>20,000.00	</td>
+                <td>20,000.00</td>
+            </tr>
+            <tr>
+                <td>Membership Fee of Professional Societies</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Institution of Information Technology Profession (IITP) Membership Fee (One Time for entire Life)</td>
+                <td>750.00</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Indian Society for Technical Education (ISTE) Membership Fee (One Time for 02 years)</td>
+                <td>175.00</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Institution of Electronics and Telecommunication Engineers (IETE) Membership Fee (One Time for 02 years)</td>
+                <td>375.00</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Institute of Electrical and Electronics Engineers (IEEE) Membership Fee (Annually)</td>
+                <td>1750.00</td>
+                <td>1750.00</td>
+            </tr>
+            <tr>
+                <td>Grand Total Fee (Per Annum) to be paid by the students</td>
+                <td>2,11,550.00</td>
+                <td>1,86,050.00</td>
+            </tr>
+        </tbody>
+    </table> 
+    <p>​​In addition to the above Fee Structure, Rs. 2000/- per annum per student shall be charged as Development Fee for the additional facilities like Indoor Sports, Outdoor Sports, Gym, Book Bank, etc.
+</p><p>
+The above fee structure may change and the students will need to pay the applicable additional fee, as notified by the SFRC, Govt. of NCT of Delhi, from time to time.
+
+ </p> 
+</div>
+</div>
+<div id="pop-up-two" class="pop-up-overlay">
+  <div class="pop-up">
+   <h1>Fee Structure for BA(JMC) Programme:</h1>
+    <a class="close" href="#">&times;</a>
+    <p>Annual Fee structure for BA(JMC) Programme at BVICAM, New Delhi, as recommended by the 05th SFRC, Govt. of NCT of Delhi, Vide F. No.: DHE  4(11) / 05th SFRC / 2021 / 2148-58 dated 10-04-2023,  effective for the years 2022-2023; 2023-2024 and 2024-2025 is as under:-</p>
+<table>
+        <caption>Fee Details</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Fee Details</th>
+                <th colspan="2">Amount (INR)</th>
+                 <th colspan="2">          </th>
+            </tr>
+            <tr>
+                <th>1st Year (Batch 2024-2027)</th>
+                <th>2nd Year (Batch 2023-2026)</th>
+                <th>3rd Year (Batch 2022-2025)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Institute's Share</th>
+                
+            </tr>
+            <tr>
+                <td>Academic Fee of the Institute</td>
+                <td>1,75,500.00</td>
+                <td>99,800.00</td>
+                <td>93,300.00
+</td>
+            </tr>
+            <tr>
+                <td>Students' Activity Fee</td>
+                <td>01,000.00</td><td>	01,000.00</td><td>	01,000.00</td>
+                
+            </tr>
+            <tr>
+                <td>Alumni Fees (Paid only in 1st year)</td>
+                <td>02,000.00	</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Subtotal Fee</td>
+                <td>1,10,300.00</td>
+                <td>99,800.00</td>
+                <td>94,300.00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Security Deposit (Refundable)</td>
+            </tr>
+            <tr>
+                <td>Security Deposit (Refundable) Paid only in 1st year</td>
+                <td>10,000</td>
+                <td>-</td>  
+                <td>-</td>
+            </tr>
+            <tr>
+                <td colspan="3">University's Share</td>
+            </tr>
+            <tr>
+                <td>University Fee (includes Examination fee for two semesters, enrollment fee, etc.)</td>
+                <td>20,000.00	</td>
+                <td>20,000.00</td>
+                <td>20,000.00</td>
+            </tr>
+            <tr>
+                <td>Membership Fee of Professional Societies</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Institution of Media Professionals (IMP) Membership Fee (One Time for entire Life)</td>
+                <td>750.00</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Delhi Journalists Association (DJA) Membership Fee (One Time for 03 Years)</td>
+                <td>175.00</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Grand Total Fee (Per Annum) to be paid by the students</td>
+                <td>1,42,250.00</td>
+                <td>1,20,800.00</td>
+                <td>1,14,700.00</td>
+                
+            </tr>
+        </tbody>
+    </table>  
+    <p>​​In addition to the above Fee Structure, Rs. 2000/- per annum per student shall be charged as Development Fee for the additional facilities like Indoor Sports, Outdoor Sports, Gym, Book Bank, etc.
+</p><p>
+The above fee structure may change and the students will need to pay the applicable additional fee, as notified by the SFRC, Govt. of NCT of Delhi, from time to time.
+
+ </p>
+</div>
+</div>
+
+<div include-html="/footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('/footer.html');
+    });
+  </script>
+</body>
+
+</html>

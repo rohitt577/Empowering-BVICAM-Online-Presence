@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Example</title>
+  <!-- Assuming you're using Bootstrap for table styling -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+  <!-- Custom CSS -->
+  <style>
+     body{
+      background-color: aliceblue;
+    }
+    .wrapper {
+      margin-top: 5vh;
+    }
+
+    .dataTables_filter {
+      float: right;
+    }
+
+    .table-hover > tbody > tr:hover {
+      background-color: lighten(cyan, 40%);
+    }
+
+    .table {
+      @media only screen and (min-width: 768px) {
+        table-layout: fixed;
+        max-width: 100% !important;
+      }
+    }
+
+    thead {
+      background: #5ba9ed;
+    }
+
+    .table td:nth-child(2) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .highlight {
+      background: lighten(yellow,30%);
+    }
+
+    @media only screen and (max-width: 767px) {
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead tr,
+      tfoot tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50% !important;
+      }
+
+      td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+
+      .table td:nth-child(1) {
+        background: #ccc;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+      }
+
+      td:nth-of-type(1):before {
+        content: "Name";
+      }
+      td:nth-of-type(2):before {
+        content: "Position";
+      }
+      td:nth-of-type(3):before {
+        content: "Office";
+      }
+      td:nth-of-type(4):before {
+        content: "Age";
+      }
+      td:nth-of-type(5):before {
+        content: "Start date";
+      }
+      td:nth-of-type(6):before {
+        content: "Salary";
+      }
+
+      .dataTables_length {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container wrapper">
+    <table class="table table-bordered table-hover" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th class="col-md-2">Image</th>
+          <th class="col-md-2">Name</th>
+          <th class="col-md-2">Designation</th>
+          <th class="col-md-2">Qualification</th>
+          <th class="col-md-2">Area of Expertise</th>
+          <th class="col-md-2">	Email Address</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Qualification</th>
+          <th>Area of Expertise</th>
+          <th>Email Address</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td><img src="assets/images/health-care/health-care-1 .jpg"></td>         
+          <td>Dr. M. N. Hoda</td>
+          <td>Director & Professor	</td>
+          <td>MCA, Ph.D., SMIEEE, SMACM, FIETE, FCSI, FIITP, LMISTE, LMISCA</td>
+          <td>Software Engineering, Innovative Teaching Learning Pedagogies</td>
+          <td>mca@bvicam.ac.in</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/health-care-2.jpg"></td>         
+          <td>Dr. Sanju Tiwari	</td>
+          <td>Professor</td>
+          <td>MCA, Ph. D., Post-Doc SMIEEE</td>
+          <td>Soft Computing, Semantic Web, Knowledge Graphs, Linked Data, Artificial Intelligence</td>
+          <td>sanju.tiwari@bvicam.in</td>
+          
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/health-care-3.jpg"></td>         
+          <td>Mrs. Anukiran Jain</td>
+          <td>Associate Professor</td>
+          <td>MCA, M. Tech, JCP</td>
+          <td>Software Engineering, Object Oriented Programming</td>
+          <td>anukiranjain@gmail.com</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/health-care-4.jpg"></td>         
+         <td>Mrs. Shalini Singh Jaspal</td>
+          <td>Associate Professor</td>
+          <td>MCA, M. Tech</td>
+           <td>Data Structures, Operating Systems, Object Oriented Programming, DBMS</td>
+          <td>shalini.jaspal@gmail.com</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/health-care-5.jpg"></td>         
+      <td>Dr. Parul Arora</td>
+          <td>Associate Professor</td>
+          <td>MCA, M. Tech, Ph.D</td>
+           <td>Computer Networking, Operating Systems, Discrete Mathematics, Information Security, Theory of Computation	</td>
+          <td>parul.arora@bvicam.in</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/health-care-6.jpg"></td>         
+          <td>Dr. Ritika Wason</td>
+          <td>Associate Professor</td>
+          <td>BSc(H), B.Ed., MCA, M.Phil (CS), Ph.D (CS)</td>
+          <td>Enterprise Java, Java, MIS, DBMS, ASP.NET, OOAD, Software Testing,C++,C</td>
+          <td>ritika.wason@bvicam.in</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/health-care-7.jpg"></td>  
+          <td>Dr. Vaishali Joshi</td>
+          <td> Associate Professor &amp; TPO</td>
+          <td>B.Sc(Maths), MCA, M.Tech(IT), Ph.D(CSA)</td>
+          <td>Database Management Sytems, Computer Graphics, Video &amp; Image Processing, IoT Forensics</td>
+          <td>vaishali.joshi@bvicam.in</td>
+        </tr>
+         <tr>
+          <td><img src="assets/images/health-care/health-care-8.jpg"></td>  
+      <td>Dr. Sunil Pratap Singh</td>
+      <td>Associate Professor</td>
+      <td>MCA, PhD(CS)</td>
+      <td>Operating System, Data Structures, Digital Marketing, Enterprise Computing with Java</td>
+      <td>sunil.pratap@bvicam.in</td>
+
+        </tr>
+         <tr>
+          <td><img src="assets/images/health-care/health-care-9.jpg"></td>  
+          <td>Ms. Ayushi Chopra</td>
+<td>Associate Professor</td>
+<td>Pursuing PhD, MJMC, PGDMC</td>
+<td>Communication, Print Journalism, Development Communication, Media Management</td>
+<td>ayushi.chopra@bvicam.in</td>
+
+        </tr>
+         <tr>
+          <td><img src="assets/images/health-care/health-care-10.jpg"></td>  
+          <td>Dr. Vanshika Bhatia</td>
+<td>Associate Professor</td>
+<td>Ph.D in Journalism & Mass Communication, MA (Mass Communication), BJMC</td>
+<td>Audio Video Production, Photography, Designing & Layouts.</td>
+<td>vanshika.bhatia@bvicam.in</td></tr>
+
+<td><img src="assets/images/health-care/health-care-11.jpg"></td>         
+          <td>Dr. Sheel Nidhi Tripathi</td>
+          <td>Associate Professor	</td>
+          <td>Gold Medalist, UGC NET, PhD-Journalism and Mass Communication</td>
+          <td>Media Research, Media Management, Corporate Communication, Development Communication, Advertising and PR, Print Journalism</td>
+          <td>sheel.nidhi@bvicam.in</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/health-care-12.jpg"></td>         
+          <td>Ms. Shweta Kothari	</td>
+          <td>Professor of Practice</td>
+          <td>Masters in Journalism (University of Sussex), TEDx speaker</td>
+          <td>Media Management, Public Relations and Event Management</td>
+          <td>shweta.kothari@bvicam.in</td>
+          
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/Uttam Singh_0.jpg"></td>         
+          <td>Uttam Singh</td>
+          <td>Assistant Professor</td>
+          <td>BCA, MCA, M.Tech.(IT)</td>
+          <td>Pattern Recognition, Web Technologies, Cognitive Computation, Cloud Computing, Full Stack Developer</td>
+          <td>uttam.singh@bvicam.in</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/Tanya_Pathak_1.jpg"></td>         
+         <td>Mrs. Tanya Pathak Garg</td>
+          <td>Assistant Professor</td>
+          <td>Ph.D. (Pursuing), MCA, OCJP, BCA</td>
+           <td>Enterprise Computing, Java, Web Development, Object Oriented Analysis and Design</td>
+          <td>stanya.pathak@bvicam.in</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/RAKHEE.jpg"></td>         
+      <td>Dr. Rakhee</td>
+          <td>Assistant Professor</td>
+          <td>Ph.D. (CSE) , M.Tech(IS), B.Tech (IT)</td>
+           <td>Machine Learning, Forecasting, Prediction, Data mining	</td>
+          <td>rakhee@bvicam.in</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/WhatsApp Image 2023-06-28 at 09.26.39(1).jpeg"></td>         
+          <td>Dr. Avneet Kaur Bhatia</td>
+          <td>Associate Professor</td>
+          <td>PH.D</td>
+          <td>Reporting, Cinema, Anchoring</td>
+          <td>avneet.kaur@bvicam.in</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/health-care/photo.jpeg"></td>  
+          <td>Dr. Saumya Bansal</td>
+          <td> Assistant Professor</td>
+          <td>Ph.D.</td>
+          <td>Artificial Intelligence, Machine Learning, Deep Learning, Recommender System, Swarm Intelligence, Evolutionary Algorithm</td>
+          <td>saumya.bansal@bvicam.in</td>
+        </tr>
+         <tr>
+          <td><img src="assets/images/health-care/sakshi.jpg"></td>  
+      <td>Ms. Sakshi Aggarwal</td>
+      <td>Assistant Professor</td>
+      <td>Master's in Mass Communication (MMC), BA (Hons.) Journalism</td>
+      <td>New media writing skills</td>
+      <td>	sakshi.aggarwal@bvicam.in</td>
+
+        </tr>
+         <tr>
+          <td><img src="assets/images/health-care/WhatsApp Image 2023-11-25 at 4.01.23 PM.jpeg"></td>  
+          <td>Manali Srivastava</td>
+<td>Assistant Professor</td>
+<td>M.A english Literature and B ed</td>
+<td>Communication and personality Development and have done Digital Marketing Course as well</td>
+<td>manali@bvicam.in</td>
+
+        </tr>
+         <tr>
+          <td><img src="assets/images/health-care/RINKU SETHI.jpg"></td>  
+          <td>Dr. Rinku Sethi</td>
+<td>Assistant Professor</td>
+<td>Pursuing Ph.D. , MJMC, BJMC</td>
+<td>Design and Graphics, Video Editing.</td>
+<td>rinku.sethi@bvicam.in</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- DataTables JS -->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.table').DataTable({
+        "columnDefs": [
+          { "orderable": false, "targets": 5 }
+        ],
+        language: {
+          'paginate': {
+            'previous': '<span class="fa fa-chevron-left"></span>',
+            'next': '<span class="fa fa-chevron-right"></span>'
+          },
+          "lengthMenu": 'Display <select class="form-control input-sm">'+
+          '<option value="10">10</option>'+
+          '<option value="20">20</option>'+
+          '<option value="30">30</option>'+
+          '<option value="40">40</option>'+
+          '<option value="50">50</option>'+
+          '<option value="-1">All</option>'+
+          '</select> results'
+        }
+      });  
+    });
+  </script>
+</body>
+</html>

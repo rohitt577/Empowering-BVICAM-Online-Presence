@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text and Image Division</title>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text {
+        flex: 1;
+    }
+
+    .image {
+        flex: 1;
+    }
+
+    /* Adjust as needed */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="text">
+        <h2><b>Campus of BVICAM</b></h2>
+        <p>
+        BVICAM is centrally located at National Highway No. 10, Rohtak Road, A-4, Paschim Vihar (just adjacent to Paschim Vihar (East) Metro Station), New Delhi, in its own state of the art sprawling campus. It is well poised with spacious parking areas with an excellent surrounding striving for a pollution-free and healthy environment.
+        </p>
+        <p>
+        The campus incorporates amenities like Conference Hall, Auditorium, Amphitheatre, ultra-modern Computer Centre, well-stocked Library, Students' Hostel, In-house Banking facility, Indoor and Outdoor games facility, aesthetically designed Canteen in an open-air ambiance, etc.
+        </p>
+        <ul>
+            <li><i class="ri-check-fill"></i><p>Graduate Programs</p></li>
+            <li><i class="ri-check-fill"></i><p>Webinars</p></li>
+            <li><i class="ri-check-fill"></i><p>Amphitheatre</p></li>
+            <li><i class="ri-check-fill"></i><p>Alumni & Professional Associations</p></li>
+            <li><i class="ri-check-fill"></i><p>Undergraduate</p></li>
+            <li><i class="ri-check-fill"></i><p>Hostel</p></li>
+            <li><i class="ri-check-fill"></i><p>Computer Resource Center</p></li>
+            <li><i class="ri-check-fill"></i><p>Laboratories & Library</p></li>
+        </ul>
+        <div class="counter">
+            <div class="row">
+                <div class="col-lg-4 col-4">
+                    <div class="counter-card">
+                        <h1>
+                            <span class="odometer" data-count="10">00</span>
+                            <span class="target">+</span>
+                        </h1>
+                        <p>Years Of Experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4">
+                    <div class="counter-card">
+                        <h1>
+                            <span class="odometer" data-count="30">00</span>
+                            <span class="target heading-color">k</span><span class="target">+</span>
+                        </h1>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4">
+                    <div class="counter-card">
+                        <h1>
+                            <span class="odometer" data-count="999">00</span>
+                            <span class="target">+</span>
+                        </h1>
+                        <p>Placements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="admission-portal.html">
+            <button class="default-btn" type="submit">  
+                Admission Related Enquiry
+            </button>
+        </a>
+    </div>
+
+    <div class="image">
+        <img src="assets/images/campus-information/campus-1.jpg" alt="Image">
+    </div>
+</div>
+
+</body>
+</html>

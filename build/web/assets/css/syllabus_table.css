@@ -1,0 +1,21 @@
+.something{
+        text-align: center;
+    }
+    
+th{
+ background-color: #67A3DC;
+ padding:8px
+}
+td{
+background-color:#a7aaac;
+}
+
+.section{
+ margin: 0 auto; /* This will horizontally center the div */
+    width: 50%;
+}
+
+table, th, td {
+  border:1px solid black;
+  text-align : center;
+}

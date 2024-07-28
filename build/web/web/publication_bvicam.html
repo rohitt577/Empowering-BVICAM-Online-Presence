@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<style>
+    body{
+        align-items: center;
+        background-color: aliceblue;
+    }
+    .styled-table {
+    border-collapse: collapse;
+    margin: 55px 500px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #272a47;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #272a47;
+}
+styled-table {
+  width: 100%; /* Maintain full-width for responsiveness */
+  border-collapse: collapse; /* Ensure borders collapse for a neat look */
+  margin: 20px auto; /* Add some margin for better spacing */
+  border: 2px solid #070db0; /* Add a visible border to the entire table */
+  box-shadow: 0px 2px 5px rgba(169, 105, 105, 0.1); /* Subtle box-shadow for depth */
+  font-family: sans-serif; /* Use a modern font for better readability */
+  transition: transform 0.2s ease-out; /* Add a transition for the hover effect */
+}
+
+th, td {
+  padding: 15px; /* Increase padding for better spacing and content */
+  border: 1px solid #ddd; /* Lighter border within cells */
+  background-color: #fff; /* White background for clear text */
+  text-align: left; /* Maintain left alignment */
+  transition: background-color 0.2s ease-out; /* Add a transition for the hover effect */
+}
+
+th {
+  font-weight: bold; /* Keep bold text for headers */
+  color: #100963; /* Darker color for contrast */
+  background-color:rgb(193, 216, 236) ; /* Light gray background for headers */
+  border-bottom: 2px solid #ddd; /* Thicker bottom border for headers */
+}
+
+tr:nth-child(even) { /* Alternate row background color for striping */
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  transform: translateY(-5px); /* Float the row up slightly on hover */
+  background-color: #bc3d3d; /* Change background color slightly on hover */
+  cursor: pointer; /* Indicate hoverability */
+}
+h1,h4{
+    text-align: center;
+}
+p{
+    align-items: left;
+    text-align: center;
+}
+ul{
+    list-style-type: disc;
+}
+</style><body>
+
+  
+ <div class="small">    
+
+  <div include-html="/header.html" id="header"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function() {
+  $('#header').load('/header.html');
+});
+</script>
+</div>
+<br>
+<br>
+<h1>Publications</h1>
+<table class="styled-table" style="width: 1000px; margin: 0 auto;">
+    <thead>
+         <tr>
+            <th> S. No.</th>
+          <th>Name</th>
+          <th>Areas of Research</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>1.</td>
+          <td>Prof. M. N. Hoda</td>
+          <td>-</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+          <td>Mrs. Shalini Singh Jaspal</td>
+          <td><ul>
+            <li>Shalini Singh Jaspal, Umang and M N Hoda, "Evolution of Routing Protocols in Wireless Sensor Networks", 09th INDIACom; 2nd International Conference on "Computing For Sustainable Global Development" 11th to 13th March, 2015, INSPEC Accession Number: 151098</li>
+            <li>Shalini, Umang, M. N. Hoda, "Cluster Tree based Routing - A step towards increasing WSN Longevity", CSI - 2015; CSI - 50th Golden Jubilee Annual Convention on “Digital Life”, 02nd to 05th December 2015</li>
+          </ul></td>
+          
+        </tr>
+        <tr>
+            <td> 3.</td>
+          <td>Dr. Ritika Wason</td>
+          <td>
+            <ul>
+                <li>BPB Model Test Paper Series Application of .NET Technology, BPB Publications, Jul 2011, ISBN: 978-81-8333-432-7.</li>
+                <li>BPB Model Test Paper Software Testing and Quality Management, BPB Publications, Jan 2011, ISBN: 978-81-8333-419-8.</li>
+                <li>“A-level” Software Testing and Quality Management, BPB Publications, Jan 2011, ISBN: 978-81-8333-355-9.</li>
+                <li>Software Testing, BPB Publications, Jan 2009, ISBN: 978-81-8333-300-9.</li>
+                <li>State-based Testing: Assumptions, Limitations and Applications in Emerging Trends in Information Technology (Ed.), 2012, Kunal Books, ISBN: 978-93-80752-68-6, pp. 61-74.</li>
+                <li>Novel Software Reliability Estimation Model for Altering Paradigms of Software Engineering, International Journal of Computer Science Issues (IJCSI), IJCSI Volume 9, Issue 3, May 2012.</li>
+                <li>New Paradigm for Software Reliability Estimation, International Journal of Computer Applications (IJCA), Volume 44- No 14, April 2012, ISSN: 0975-8887, Impact Factor: 0.835, ISBN: 973-93-80867-72-2</li>
+                <li>Comparison Analysis of PageRank and HITS Algorithm, International Journal of Engineering Research and Technology (IJERT), Vol 1, Issue 8, Oct 2012, ISSN 2278-0181.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+            <td> 4.</td>
+          <td>	Dr. Vaishali Joshi</td>
+          <td>-</td>
+        </tr>
+        <tr>
+            <td>5. </td>
+            <td>Dr. Sunil Pratap Singh  </td>
+            <td><ul>
+                <li>A hybrid decision support model using axiomatic fuzzy set theory in AHP and TOPSIS for multicriteria route selection, Complex and Intelligent Systems (SCIE), vol. 4, pp. 133-144, 2018.</li>
+            <li>An integrated AFS-based SWOT analysis approach for evaluation of strategies under MCDM environment, Journal of Operations and Strategic Planning, vol. 1(2), pp. 1-19, 2018.</li><li>
+AFS theory based integrated multiple criteria decision making model for transportation mode selection, International Journal of Transportation (ESCI), vol. 6(2), pp. 21-32, 2018.</li><li>Design and implementation of a location–based multimedia mobile tourist guide system, International Journal of Information and Communication Technology (Scopus), vol. 7(1), pp. 40-51, 2015.</li>
+<li>Mapping spatial data on the Web using free and open-source tools: a prototype implementation, Journal of Geographic Information System, vol. 6(1), pp. 30-39, 2014.</li><li>A conceptual framework for evaluating the sustainability through green cloud computing systems (Scopus), In Proc. of the 10th IEEE International Conference on Computing for Sustainable Global Development, 2023.</li>
+<li>An AHP-TOPSIS based decision support model for selecting biometric system (Scopus), In Proc. of the 10th IEEE International Conference on Computing for Sustainable Global Development, 2023.</li>
+            </ul></td>
+        </tr>
+        
+        
+    </tbody>
+</table>
+
+
+
+<div include-html="/footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('/footer.html');
+    });
+  </script>
+</body></html>

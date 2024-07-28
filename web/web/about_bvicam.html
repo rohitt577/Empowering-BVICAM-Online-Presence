@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BVICAM | Where we turn you into a force </title>
+  </head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+.about {
+    border: 1px sandybrown #000; /* Adjust border color as needed */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* Adjust shadow color, size, blur, and spread as needed */
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: $text;
+  background-color: aliceblue;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  font-family: 'EB Garamond', serif;
+  color: $black;
+  line-height: 1.1;
+}
+
+h2, h3 {
+  color: black;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.325rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin: 0 0 2rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  &:nth-child(4) {
+    margin: 0;
+  }
+  &.copyright {
+    margin: 1.5rem 0;
+  }
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  width: 40rem;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0 1.5rem 0 0;
+  }
+}
+
+.intro {
+  margin: 1rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+
+#logo {
+  color: black;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 75rem;
+  width: 100%;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.grid {
+  > [class*="column-"] {
+    padding: 1rem;
+  }
+}
+
+.section-heading {
+  background-color: #96c8fa;
+  transform: rotate(0) translateX(0);
+}
+
+.column {
+img {
+    float: left;
+    margin: 0 20px 20px 0;
+width: 30%;
+  height: 30%;
+	object-fit: cover;
+}
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: $md) {
+  body {
+    font-size: 1.125rem;
+  }
+  
+  h1 {
+    font-size: 3.25rem;
+  }
+  
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+  
+  .column {
+  img {
+    height: 10px;
+  }  
+}
+}
+    </style>
+
+    <div class="small">    
+
+      <div include-html="/header.html" id="header"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#header').load('/header.html');
+    });
+  </script>
+  
+  </div>
+
+
+
+
+
+
+
+    <main class="about">
+    <div class="container">
+      <section class="grid info">
+        <div class="column-xs-12 column-md-1">
+          <div class="about">
+            <h1 class="section-heading"><b>About Bharati Vidyapeeth's Institute Of Computer Applications and Management</b></h1>
+          </div>
+        </div>
+        <div class="column">
+          <img src="assets/images/campus-information/campus-2.jpg">
+        </div>
+        <div class="column-xs-12 column-md-7">
+          <div class="intro">
+         <p>Bharati Vidyapeeth's Institute of Computers Applications and Management (BVICAM), New Delhi, is one of the 187 institutions under Bharati Vidyapeeth, Pune. With a clear vision and mission to serve the cause of higher education in India, the Institute started conducting Master of Computer Applications (MCA) programme with effect from the Academic year 2002-2003. The Institute is affiliated to Guru Gobind Singh Indraprastha University (GGSIPU), Sector 16C Dwarka, New Delhi-78. The Institute is also approved by the All India Council for Technical Education (AICTE), Ministry of HRD, Government. of India, New Delhi. BVICAM, New Delhi, is the first choice of students and parents for MCA admission, in Northern India and many of the Top Rankers from the CET of GGSIP University join BVICAM.</p><p>
+Bharati Vidyapeeth runs primary and secondary schools. It conducts colleges and institutions of liberal and professional education. Among them are Arts, Science and Commerce colleges, as well as colleges of Medicine, Dentistry, Ayurved, Homoeopathy, Nursing, Engineering, Architecture, Pharmacy, Management Education, Computer Science and IT, Hotel Management and Catering Technology, Law, Social Work, etc. In brief, Bharati Vidyapeeth has institutions in almost all the fields of knowledge.
+</p><p>
+Bharati Vidyapeeth has six research institutes in which research work is being carried out in such diversified areas as Stem Cell, Animal and Plant Tissue Culture, Applied Chemistry, Pharmaceutical Sciences, Environment related issues, social sciences and humanities etc. All these colleges are well reputed for the infrastructural facilities and academic excellence they have achieved. Bharati Vidyapeeth is an educational institution with a difference. Social consciousness and social commitment of Dr. Kadam are reflected in the institutions which he has started and also in their activities. Among the other institutions of Bharati Vidyapeeth, which need a special mention, are a public school situated in the picturesque natural environment of Panchgani, the queen of hill stations in Maharashtra and two renowned English medium schools in Pune and Navi Mumbai.
+</p><p>
+BVICAM is centrally located at A-4, Paschim Vihar, adjacent to Paschim Vihar (East) DMRC Metro Station, National Highway No. 10, Rohtak Road, New Delhi, in its own state of the art sprawling campus. It is well poised with spacious parking areas with an excellent surrounding pollution free and healthy environment. The campus incorporates amenities like Conference Hall, Auditorium, Amphitheatre, modern Computer Resource Centre, well stocked Library, Student's Hostel, Guest House, In-house Banking facility, Indoor and Outdoor games facility, aesthetically designed Canteen in an open-air ambience, etc.</p><p>
+The University is also a member of Association of Indian Universities (AIU), New Delhi and the Association of Commonwealth Universities. It is really credible for this nascent University to have received ‘A’ Grade from the National Assessment and Accreditation Council (NAAC). Some of the constituent units of the University have also been accredited with ‘A’ Grade by the National Board of Accreditation. All the technical/professional colleges have been recognized by the concerned apex bodies in India, like Medical Council of India, Dental Council of India, Central Council of Indian Medicine, All India Council for Technical Education (AICTE), Pharmacy Council of India, and Bar Council of India, etc. Hence the degrees given in these colleges of Bharati Vidyapeeth Deemed University, Pune, are fully recognized in India and abroad. The degrees, diplomas and certificates awarded have the same legal status as that of any other statutory Universities in India.
+    </p><p>With its excellent Infrastructural and Instructional facilities for the students, BVICAM provides personalized attention to each student through its unique Student Teacher Wardship programme, having a teacher mentor for every student to monitor and facilitate his/her all round personality development. The Institute possesses an ultra modern "Computer Resource Centre" with excellent interiors housing 175 computers systems equipped with the latest and relevant hardware and software, as required for the course curriculum from time to time. To help students make efficient use of above resources; the laboratories are kept open for minimum 10 hours daily. The library houses a vast collection of General Books, Text Books, Indian/Foreign Periodicals/Journals/Magazines along with leading e-journals. Book Bank facility is also made available to students. The library has more than 1000 titles and 8000 Volumes in all.
+
+The twin sharing Girls' hostel, within the campus, offers a secure home to its female students with an independent life style, while ensuring privacy with a congenial atmosphere. The hostel is augmented with proper food facilities, common T.V. room, other indoor games and adequate medical aid.
+    </p>
+</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div include-html="/footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('/footer.html');
+    });
+  </script>
+
+
+
+
+</body>
+</html>

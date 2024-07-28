@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+  h1{
+  font-family:'Roboto'
+}
+
+body{
+  font-family:'Roboto'
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Flipbook</title>
+</head>
+<body>
+
+<div class="small">    
+
+      <div include-html="/header.html" id="header"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#header').load('/header.html');
+    });
+  </script>
+  
+  </div>
+
+
+
+    
+<iframe src="assets/images/brochure/brochure.pdf" width="70%" height="800" style=" margin-left: 250px; border: 20px" allowFullScreen>
+</iframe>
+
+
+<div include-html="/footer.html" id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#footer').load('/footer.html');
+    });
+  </script>
+
+
+    
+</body>
+</html>
